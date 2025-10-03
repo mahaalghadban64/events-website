@@ -23,6 +23,9 @@ html{
 body{
     font-family: 'Tajawal';
 }
+a{
+  text-decoration:none ;
+}
 
 /* start header section style */
 header{
@@ -40,10 +43,6 @@ header .container {
     background-color: white;
     border-radius: 10px;
  
-
- 
-
-   
 }
 
 
@@ -171,8 +170,13 @@ header .container {
 }
 
 /* end header section style */
+
+
+
+
+
 /* start trending events */
-/* start trending events */
+
 
 
 .trading-events{
@@ -227,7 +231,7 @@ border: 2px solid white;
 }
 
 .trading-event .container .btm-sliders span:hover{
-/* background-color: white; */
+
 cursor: pointer;
 }
  .trading-event .container .slide{
@@ -256,6 +260,10 @@ background-color: rgba(255, 255, 255, 0.2);
 }
 /* end trending events */
 
+
+
+
+
 /* start catigories section style */
 
   .catigories {
@@ -268,7 +276,11 @@ background-color: rgba(255, 255, 255, 0.2);
       font-size: 25px;
       text-align: center;
       margin-bottom: 2rem;
+      transition: 0.3s;
     }
+      .catigories h2:hover{
+        letter-spacing: 2px;
+      }
     
     .catigories .category-item {
       text-align: center;
@@ -318,9 +330,12 @@ background-color: rgba(255, 255, 255, 0.2);
     }
 
 /* end catigories section style */
+
+
+
 /* start latest event section style */
 .trading-event{
-    /* display: flex; */
+    
     justify-content: center;
     height: 100vh;
     align-items: center;
@@ -335,7 +350,7 @@ background-color: rgba(255, 255, 255, 0.2);
   height: 500px;
   width:350px;
   border-radius: 3px;
-  transition: 0.5s;
+
 }
 .latest-events .container{
   display: flex;
@@ -357,7 +372,7 @@ background-color: rgba(255, 255, 255, 0.2);
   bottom: 400px;
   background: rgb(27,27,27,0.5);
   color:white;
-  /* transition: 0.3s; */
+  transition: 0.5s;
   
 }
 
@@ -365,6 +380,7 @@ background-color: rgba(255, 255, 255, 0.2);
   margin: 10px;
   font-size: 40px;
   color: white;
+    
 }
 
 .latest-events .container .card .intro p{
@@ -389,14 +405,13 @@ background-color: rgba(255, 255, 255, 0.2);
 }
 .latest-events .container .card:hover{
   cursor: pointer;
-  /* visibility: hidden;
-  opacity: 0; */
+
 }
 
 .latest-events .container .card:hover .intro{
-  height: 220px;
-  bottom: 240px;
-  background: var(--main-color);
+  height: 300px;
+  bottom: 150px;
+  background: rgba(80,13,116,0.7);
   transition: 0.5s;
 }
 .latest-events .container .card:hover p{
@@ -406,7 +421,14 @@ background-color: rgba(255, 255, 255, 0.2);
 .latest-events .container .card:hover img{
   transform: scale(1.1) ;
 }
+
+
 /* end latest event section style */
+
+
+
+
+
 /* start about us section style */
 
 .about-us{
@@ -496,6 +518,10 @@ footer .container .contact-us a{
 footer .container  h2{
     color: var(--main-color);
     margin: 15px;
+    transition: 0.3s;
+}
+footer .container  h2:hover{
+  letter-spacing: 2px;
 }
 .copy-right{
     background-color: var(--second-color);
