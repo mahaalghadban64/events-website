@@ -10,8 +10,7 @@
   <link rel="stylesheet" href="css/fontawesome-free-7.0.1-web/css/all.min.css">
 
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/events.css">
-  <title>Events</title>
+  <title>Nabd Dimashq</title>
 </head>
 
 <body>
@@ -30,10 +29,10 @@
         <div class="col-6 col-md-9 d-flex justify-content-end">
           <nav class="desktop-nav d-none d-md-block">
             <ul class="d-flex list-unstyled mb-0">
-              <li><a href="index.html #home" class="px-3 py-2">Home</a></li>
-              <li><a href="#index.html #about" class="px-3 py-2">About</a></li>
-              <li><a href="index.html #events" class="px-3 py-2">Events</a></li>
-              <li><a href="index.html #call" class="px-3 py-2">Call US</a></li>
+              <li><a href="#home" class="px-3 py-2">Home</a></li>
+              <li><a href="#about" class="px-3 py-2">About</a></li>
+              <li><a href="#events" class="px-3 py-2">Events</a></li>
+              <li><a href="#call" class="px-3 py-2">Call US</a></li>
             </ul>
           </nav>
 
@@ -46,17 +45,17 @@
     </div>
 
     <!-- Mobile Sidebar -->
-    <nav>
+    <nav  id="home">
       <ul class="sidebar list-unstyled">
         <li>
           <button class="close">
             <i class="fa fa-close text-white"></i>
           </button>
         </li>
-     <li><a href="index.html #home" class="px-3 py-2">Home</a></li>
-        <li><a href="index.html #about" class="px-3 py-2">About</a></li>
-        <li><a href="index.html #events" class="px-3 py-2">Events</a></li>
-        <li><a href="index.html #call" class="px-3 py-2">Call US</a></li>
+        <li><a href="#home" class="px-3 py-2">Home</a></li>
+        <li><a href="#about" class="px-3 py-2">About</a></li>
+        <li><a href="#events" class="px-3 py-2">Events</a></li>
+        <li><a href="#call" class="px-3 py-2">Call US</a></li>
       </ul>
     </nav>
 
@@ -74,12 +73,51 @@
     </div>
   </header>
   <!-- header section end -->
+  <!-- start events sections -->
 
-  <!-- start catigories section -->
-    <section class="catigories">
+  <!-- start trending event -->
+  <!-- start trending event -->
+
+
+  <section class="trading-event" id="events">
+    <h2>Tranding Events</h2>
+    <div class="container">
+      <div class="slides">
+        <a  target="_blank" href="event.html">
+          <img src="Photos/events/sliders/slide1.jpg">
+          <img src="Photos/events/sliders/slide2.jpg">
+          <img src="Photos/events/sliders/slide3.jpg">
+        </a>
+      </div>
+      <div onclick="side_slide(-1)" class="slide left">
+        <span class="fas fa-angle-left"> </span>
+      </div>
+      <div onclick="side_slide(1)" class="slide right">
+        <span class="fas fa-angle-right"> </span>
+      </div>
+
+      <div class="btm-sliders">
+        <span onclick="btm_slide(1)"> </span>
+        <span onclick="btm_slide(2)"> </span>
+        <span onclick="btm_slide(3)"> </span>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- end trending event -->
+
+  <!-- end trending event -->
+
+
+
+<!-- start catigories section -->
+
+
+  <section class="catigories">
     <div class="container">
       <div class="row">
-        <h2>All Catigories</h2>
+       <a href="events.html" target="_blank"> <h2>All Catigories</h2></a>
         <div class="category-item col-lg-3 col-md-6 col-sm-6 col-12"> <img src="Photos/events/catigories/art.jpg"
             alt="">
           <p><a target="_blank"  href="events.html">Art & Culture</a></p>
@@ -105,352 +143,147 @@
 
 
   </section>
-  <hr>
-   <!-- end catigories section -->
-
-
-
-
-   <section class="entertanments">
+  <!-- end catigories section -->
+   <!-- start latest events section -->
+    <div class="latest-events">
+      <h2>latest Events</h2>
     <div class="container">
-      
-      
-   <div class="row justify-content-center">
-       <div class="card col-lg-4 col-sm-12">
-        <img src="Photos/events/Entertainment/music lina.jpg" alt="">
-        <div class="intro">
-          <h2>Dmascuse Night</h2>
-          <p>
-            <span>Lena Chamamyan</span> <br>
+      <div class="row justify-content-center">
+        <div class="card  col-lg-4 col-sm-12">
+          <img src="Photos/events/latest events/music lina.jpg" alt="">
+          <div class="intro">
+            <h2>Dmascuse Night</h2>
+            <p>
+              <span>Lena Chamamyan</span> <br>
               Opera House <br> 10 OCT
               <br> friday 9pm <br> 100$ <br>
-              <button>More Detiles</button>
-          </p>
+                  <a href="event.html" target="_blank"> <button>More Detiles</button></a>
+            </p>
+          </div>
         </div>
-      </div>
-      
-      
-      <div class="card col-lg-4 col-sm-12">
-        <img src="Photos/events/Entertainment/music iyad.jpg" alt="">
-        <div class="intro">
-          <h2>Dmascuse Night</h2>
-          <p>
-            <span>Iyad Rimawy</span> <br>
+        <div class="card  col-lg-4 col-sm-12">
+          <img src="Photos/events/latest events/music iyad.jpg" alt="">
+          <div class="intro">
+            <h2>Dmascuse Night</h2>
+            <p>
+              <span>Iyad Rimawy</span> <br>
               Opera House <br> 12 OCT
               <br> sunday 9pm <br> 100$ <br>
-              <button>More Detiles</button>
-          </p>
-        </div>
-      </div>
-      
-      
-      <div class="card col-lg-4 col-sm-12">
-        <img src="Photos/events/Entertainment/Nass.jpg" alt="">
-        <div class="intro">
-          <h2>Nights of the Damascus Citadel</h2>
-          <p>
-            <span>Nassif Zaytoon</span> <br>
-              Damascus Citadel <br> 12 SEP
-              <br> friday 9pm <br> 50$ <br>
-              <button>More Detiles</button>
-          </p>
-        </div>
-      </div>
-      
-      
-      <div class="card col-lg-4 col-sm-12">
-        <img src="Photos/events/Entertainment/asala2.jpg" alt="">
-        <div class="intro">
-          <h2>Nights of the Damascus Citadel</h2>
-          <p>
-            <span>Assala</span> <br>
-              Damascus Citadel <br> 13 SEP
-              <br> saturday 9pm <br> 50$ <br>
-              <button>More Detiles</button>
-          </p>
-        </div>
-      </div>
-      
-      
-      <div class="card col-lg-4 col-sm-12">
-        <img src="Photos/events/Entertainment/Kdm.jpg" alt="">
-        <div class="intro">
-          <h2>Nights of the Damascus Citadel</h2>
-          <p>
-            <span>Kadim Alsaher</span> <br>
-              Damascus Citadel <br> 14 SEP
-              <br> sunday 9pm <br> 50$ <br>
-              <button>More Detiles</button>
-          </p>
-        </div>
-      </div>
-      
-      
-      <div class="card col-lg-4 col-sm-12">
-        <img src="Photos/events/Entertainment/Wael.jpg" alt="">
-        <div class="intro">
-          <h2>Sounds of christmas</h2>
-          <p>
-            <span>wael jassar</span> <br>
-              Dama rose<br> 29 DEC
-              <br> monday 9pm <br> 50$ <br>
-              <button>More Detiles</button>
-            
-          </p>
-        </div>
-      </div>
-      
-      
-      <div class="card col-lg-4 col-sm-12">
-        <img src="Photos/events/Entertainment/Amr.jpg" alt="">
-        <div class="intro">
-          <h2>Sounds of christmas</h2>
-          <p>
-            <span>Amr Diab</span> <br>
-              Dama rose<br> 30 DEC
-              <br> tuesday 9pm <br> 100$ <br>
-              <button>More Detiles</button>
-            
-          </p>
-        </div>
-      </div>
-      
-      
-      <div class="card col-lg-4 col-sm-6">
-        <img src="Photos/events/Entertainment/asala2.jpg" alt="">
-        <div class="intro">
-          <h2>Sounds of christmas</h2>
-          <p>
-            <span>Assala</span> <br>
-              Dama rose<br> 31 DEC
-              <br> wednesday 9pm <br> 50$ <br>
-              <button>More Detiles</button>
-            
-          </p>
-        </div>
-      </div>
-   </div>
-    
-    </div>
-  </section>
-  
-  <section class="culture">
-    <div class="container">
-      
-      
-    <div class="row justify-content-center">
-        <div class="card col-lg-4 col-sm-12">
-        <img src="Photos/events/Culture/art.jpg" alt="">
-        <div class="intro">
-          <h2>ancient city art</h2>
-            <p>
-              <span>Damascus gallery</span> <br>
-              Asaad basha khan <br> 14 OCT
-              <br> Monday 13pm <br> 10$ <br>
-              <button>More Detiles</button>
+               <a href="event.html" target="_blank"> <button>More Detiles</button></a>
             </p>
+          </div>
         </div>
-      </div>
-      
-      
-      <div class="card col-lg-4 col-sm-12">
-        <img src="Photos/events/Culture/Syrian color.jpg" alt="">
-        <div class="intro">
-          <h2>Syrian color pazar</h2>
-          <p>
-            Seven Gates-Omayad hall <br>
-            17-18-19 NOV<br>
-            11:00am - 20:00pm<br>
-            Free <br>
-            <button>More Detiles</button>
-          </p>
-        </div>
-      </div>
-      
-      
-      <div class="card col-lg-4 col-sm-12">
-        <img src="Photos/events/Culture/Handicrafts Exhibition.jpg" alt="">
-        <div class="intro">
-          <h2>Handicrafts Exhibition</h2>
-          <p>
-            Damascus-Old Market <br>
-            20-21 SEP<br>
-            11:00am - 20:00pm<br>
-            5$<br>
-            <button>More Detiles</button>
-          </p>
-        </div>
-      </div>
-      
-      
-      <div class="card col-lg-4 col-sm-12">
-        <img src="Photos/events/Culture/Syrian Writers Forum.jpg" alt="">
-        <div class="intro">
-          <h2>Syrian writers forum</h2>
-          <p>
-            National library <br>
-            27-28-29 JUL<br>
-            17:00pm - 21:00pm<br>
-            Free <br>
-            <button>More Detiles</button>
-          </p>
-        </div>
-      </div>
-
-    </div>
-    
-    </div>
-  </section>
-  
-  <section class="sport">
-    <div class="container">
-      
-      
-    <div class="row justify-content-center">
         <div class="card col-lg-4 col-sm-12">
-        <img src="Photos/events/sport/IMG_20251003_131059.jpg" alt="">
-        <div class="intro">
-          <h2>Amateur Football Championship</h2>
-          <p>
-            Abasien Stadium <br>
-            12 SEP<br>
-           Friday 11:00am<br>
-            5$ <br>
-            <button>More Detiles</button>
-          </p>
-        </div>
-      </div>
-      
-      
-      <div class="card col-lg-4 col-sm-12">
-        <img src="Photos/events/sport/IMG_20251003_131410.jpg" alt="">
-        <div class="intro">
-          <h2>Syria x China</h2>
-          <p>
-           New Stadium <br>
-            8 OCT<br>
-           Wednesday 9:00pm<br>
-            15$ <br>
-            <button>More Detiles</button>
-          </p>
-        </div>
-      </div>
-      
-      
-      <div class="card col-lg-4 col-sm-12">
-        <img src="Photos/events/sport/mach.jpg" alt="">
-        <div class="intro">
-          <h2>Basketball mach</h2>
+          <img src="Photos/events/latest events/mach.jpg" alt="">
+          <div class="intro">
+            <h2>Basketball mach</h2>
             <p>
               <span>alwahdah x alhekma</span> <br>
               alnajma stadium  <br> 7 OCT
               <br> thursday 17:00 pm <br> 15$ <br>
-              <button>More Detiles</button>
+                  <a href="event.html" target="_blank"> <button>More Detiles</button></a>
             </p>
+          </div>
         </div>
-      </div>
-      
-      
-      <div class="card col-lg-4 col-sm-12">
-        <img src="Photos/events/sport/marathon.jpg" alt="">
-        <div class="intro">
-          <h2>Damascus Marathon</h2>
-            <p>
-             
-              Sport City <br> 26 SEP
-              <br> friday 9am <br> 20$ <br>
-              <button>More Detiles</button>
-            </p>
-        </div>
-      </div>
-
-    </div>
-    
-    </div>
-  </section>
-  
-  <section class="educational">
-    <div class="container">
-      
-      
-     <div class="row justify-content-center">
-       <div class="card col-lg-4 col-sm-12">
-        <img src="Photos/events/Educational/texpo.jpg" alt="">
-        <div class="intro">
-          <h2>Expo Land</h2>
+        <div class="card col-lg-4 col-sm-12">
+          <img src="Photos/events/latest events/texpo.jpg" alt="">
+          <div class="intro">
+            <h2>Expo Land</h2>
             <p>
               <span>Technology Exhibition</span> <br>
               Damascus-Exhibition City <br> 17 OCT
               <br> friday 2pm <br> 25$ <br>
-              <button>More Detiles</button>
+                 <a href="event.html" target="_blank"> <button>More Detiles</button></a>
             </p>
+          </div>
         </div>
+         <div class="card col-lg-4 col-sm-12">
+          <img src="Photos/events/latest events/art.jpg" alt="">
+          <div class="intro">
+            <h2>ancient city art</h2>
+            <p>
+              <span>Damascus gallery</span> <br>
+              Asaad basha khan <br> 14 OCT
+              <br> Monday 13pm <br> 10$ <br>
+              <a href="event.html" target="_blank"> <button>More Detiles</button></a>
+            </p>
+          </div>
+        </div>
+         <div class="card  col-lg-4 col-sm-12">
+          <img src="Photos/events/latest events/marathon.jpg" alt="">
+          <div class="intro">
+            <h2>Damascus Marathon</h2>
+            <p>
+             
+              Sport City <br> 26 SEP
+              <br> friday 9am<br> 20$  <br>
+             <a href="event.html" target="_blank"> <button>More Detiles</button></a>
+            </p>
+          </div>
+        </div>
+        
       </div>
-      
-      
-      <div class="card col-lg-4 col-sm-12">
-        <img src="Photos/events/Educational/Code.jpg" alt="">
-        <div class="intro">
-          <h2>Hour Of Code</h2>
-          <p>
-            Damascus University  <br>
-            8 OCT<br>
-           Wednesday 12:00pm<br>
-            Free<br>
-            <button>More Detiles</button>
+    </div>
+  </div>
+    <!-- end latest events section -->
+
+
+
+
+
+  <!-- end events sections -->
+  <!-- start about us section -->
+  <section class="about-us" id="about">
+
+    <div class="container">
+      <div class="row justify-content-between ">
+        <div class="about-us-info col-lg-6 col-md-6 col-sm-12 ">
+          <h1>Nabd Dimashq</h1>
+          <p>we have a cteative team that pays attention to the smallest details to creat an <span>unforgettable
+              event..</span> <br>
+            <span>NABD DIMASHQ</span> is an online platform that bring together the latest culture,artistic,sports,and
+            scientific events happenning in Damascus. <br>
+            Our mission is to make it easy for you to discuver and join events you care about,all in one orgnized and
+            user-friendly place _ keeping you connected to the city's vibrant pluse. <br>
+            <a  target="_blank"  href="about.html"><button class="contact">About us</button></a>
           </p>
         </div>
-      </div>
-      
-      
-      <div class="card col-lg-4 col-sm-12">
-        <img src="Photos/events/Educational/Machine.png" alt="">
-        <div class="intro">
-          <h2>Machine Learning</h2>
-          <p>
-            Damascus University  <br>
-            13 OCT<br>
-           Sunday 12:00pm<br>
-           20$<br>
-            <button>More Detiles</button>
-        </div>
-      </div>
-      
-      
-      <div class="card col-lg-4 col-sm-12">
-        <img src="Photos/events/Educational/Marketing.jpg" alt="">
-        <div class="intro">
-          <h2>Modern Marketing Summit</h2>
-          <p>
-            Conference Building  <br>
-            14 OCT<br>
-           Monday 2:00pm<br>
-            Free<br>
-            <button>More Detiles</button>
-        </div>
-      </div>
-     </div>
 
-    
-    </div>
+        <div class="about-us-img col-lg-6 col-md-6 col-sm-12 ">
+          <img src="Photos/others/id.jpg" alt="img">
+        </div>
+
+      </div>
   </section>
-<!-- moving up button -->
-  <a href="#header">  <button class="moving" ><i class="fas fa-angle-up"></i></button></a>
+
+  </div>
 
 
-    <!-- start footer section -->
-  <footer>
+
+
+
+
+  <!-- end about us section -->
+
+
+
+   <!-- moving up button -->
+ <a href="#header">  <button class="moving" ><i class="fas fa-angle-up"></i></button></a>
+
+
+  <!-- start footer section -->
+  <footer id="call">
     <div class="container">
       <div class="row justify-content-between">
 
         <div class="container contact-us col-md-3  col-xs-12">
 
           <div class="row justify-content-between">
-             <a href="contact.html" target="_blank"><h2 class="col-12">Contact us</h2></a>
+            <a href="contact.html" target="_blank"><h2 class="col-12">Contact us</h2></a>
             <a target="_blank" href="" class="col-12"> <i class="fa fa-phone"></i>phone: 0991114578</a>
             <a target="_blank" href="mailto:info@svuonline.org" class="col-12"> <i class="fa fa-at"></i>E-mail:nabddimashq@gmail.com </a>
             <a  target="_blank" href="https://www.svuonline.org/" class="col-12"> <i class="fa fa-globe"></i> www.nabd-dimashq@info.net</a>
-            <a target="_blank" href="" class="col-12"> <i class="fa fa-map-marker "></i> syria-damascus</a>
+            <a target="_blank" href="https://www.google.com/maps/place/Damascus,+Syria" class="col-12"> <i class="fa fa-map-marker "></i> syria-damascus</a>
 
           </div>
 
@@ -459,7 +292,7 @@
 
 
           <div class="row justify-content-between">
-           <a href="contact.html" target="">  <h2 class="col-12 ">Follow us</h2></a>
+          <a href="contact.html" target="">  <h2 class="col-12 ">Follow us</h2></a>
             <a target="_blank" href="https://www.facebook.com/share/12DibUjfkss/" class="col-12"> <i class="fa-brands fa-facebook"></i><span> Facebook</span></a>
             <a target="_blank" href="http://instagram.com/syrian_virtual_university" class="col-12"> <i class="fa-brands fa-instagram"></i> <span>Instagram</span></a>
             <a target="_blank" href="https://t.me/svu_news_ch" class="col-12"> <i class="fa-brands fa-whatsapp"></i> <span>Whatsapp</span></a>
@@ -478,9 +311,6 @@
         &copy 2025 NABD DIMASHQ .All rights reserved
       </div>
     </div>
-
-
-   
 
   </footer>
   <!-- end footer section -->
