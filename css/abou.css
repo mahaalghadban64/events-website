@@ -1,0 +1,141 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* general setting , these style apply globally across the prpject,includes: resets,variable. */
+@font-face{
+    font-family: Tajawal;
+    src: url(../Tajawal/Tajawal-Black.ttf);
+}
+
+:root{
+    --main-color:#500d74;
+    --second-color:white;
+    --second-color1: #c8b3d49e;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Tajawal';
+}
+
+.title {
+      text-align: center;
+      color: #500d74;
+      margin-top: 30px;
+    }
+
+    .about {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+    }
+
+     .about img.header-img {
+     
+      
+      border-radius: 12px;
+     
+    } 
+   
+     @media (max-width: 768px){
+      .about img.header-img{
+        width: 100%;
+        justify-content: space-around;
+      }
+     }
+
+    .about p {
+      font-size: 17px;
+      color: black;
+      line-height: 1.8;
+      text-align: justify;
+    }
+    .about span{
+        color: var(--main-color);
+    font-weight: 800;
+    font-size: larger;
+    }
+    h1{
+         font-size: 45px;
+    font-weight: 800;
+        color: var(--main-color);
+        margin-bottom: 15px;
+    }
+
+    .values {
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 30px;
+    }
+
+    .values h3 {
+      color: #500d74;
+      margin-bottom: 10px;
+    }
+
+    .team {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .team h3 {
+      color: #500d74;
+      margin-bottom: 20px;
+    }
+
+    .members {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    .member {
+      background: #fff;
+      border-radius: 12px;
+      padding: 15px;
+      width: 180px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .member:hover {
+      transform: translateY(-5px);
+    }
+
+    .member img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .member h4 {
+      margin: 5px 0 3px 0;
+      color: black;
+    }
+
+    .member p {
+      margin: 0;
+      font-size: 14px;
+      color: black;
+      text-align: center;
+    }
+      @media (max-width: 768px) {
+      .members {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
