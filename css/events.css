@@ -15,6 +15,25 @@
     --second-color:white;
     --second-color1: #c8b3d49e;
 }
+.arabic{
+  display: none;
+}
+.english{
+  display: block;
+}
+body[lang="ar"] .arabic{display: block;}
+body[lang="ar"] .english{display: none;}
+body[dir="rtl"]{
+  direction: rtl;
+  text-align: right;
+
+}
+body[dir="ltr"]{
+  direction: ltr;
+  text-align:left;
+
+}
+
 header .container {
     background-color: white;
     border-radius: 10px;
@@ -33,6 +52,7 @@ header .container {
   height: 500px;
   width:350px;
   border-radius: 3px;
+  
 }
 .entertanments .container,.culture .container,.sport .container,.educational .container{
   display: flex;
