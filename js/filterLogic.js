@@ -1,4 +1,4 @@
-// sidebar functions
+  // sidebar functions
 function showsidebar() {
   const sidebar = document.querySelector('.sidebar');
   sidebar.style.display = 'flex';
@@ -22,6 +22,32 @@ document.querySelector('.sidebar .close').addEventListener('click', hidesidebar)
       const sidebar = document.querySelector('.sidebar');
       sidebar.style.display = 'none';
     }
+    // ------------------------------------------------------------------
+      // sidebar functions
+function showsidebarar() {
+  const sidebarar = document.querySelector('.arabic .sidebar');
+  sidebarar.style.display = 'flex';
+}
+
+function hidesidebarar() {
+  const sidebarar = document.querySelector('.arabic .sidebar');
+  sidebarar.style.display = 'none';
+}
+
+// Add event listeners
+document.querySelector('.arabic .menu-toggle').addEventListener('click', showsidebarar);
+document.querySelector('.arabic .sidebar .close').addEventListener('click', hidesidebarar);
+
+    function showsidebarar() {
+      const sidebarar = document.querySelector('.arabic .sidebar');
+      sidebarar.style.display = 'flex';
+    }
+
+    function hidesidebarar() {
+      const sidebarar = document.querySelector('.arabic .sidebar');
+      sidebarar.style.display = 'none';
+    }
+
 
 // Languag Swich
 // -------------------------------------------------------------------
