@@ -9,120 +9,352 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="css/fontawesome-free-7.0.1-web/css/all.min.css">
 
-  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontawesome-free-7.0.1-web/css/all.min.css">
   <title>contact</title>
 </head>
 
 <body>
-  <!-- header section start -->
-  <header class="position-relative">
-    <div class="container py-3">
-      <div class="row align-items-center">
-        <!-- Logo -->
-        <div class="col-6 col-md-3">
-          <a href="#" class="logo">
-            <img src="Photos/logo/logo1.jpg" alt="logo" class="img-fluid">
-          </a>
-        </div>
+  <section class="english">
+   <!-- header section start -->
+    <header class="position-relative" id="header">
+      <div class="container py-3">
+        <div class="row align-items-center">
+          <!-- Logo -->
+          <div class="col-6 col-md-3">
+            <a href="#" class="logo">
+              <img src="Photos/logo/logo1.jpg" alt="logo" class="img-fluid">
+            </a>
+          </div>
 
-        <!-- Desktop Navbar -->
-        <div class="col-6 col-md-9 d-flex justify-content-end">
-          <nav class="desktop-nav d-none d-md-block">
-            <ul class="d-flex list-unstyled mb-0">
-              <li><a href="/events-website/#home" class="px-3 py-2">Home</a></li>
-              <li><a href="/events-website/#about" class="px-3 py-2">About</a></li>
-              <li><a href="/events-website/#events" class="px-3 py-2">Events</a></li>
-              <li><a href="/events-website/#call" class="px-3 py-2">Call US</a></li>
-            </ul>
-          </nav>
+          <!-- Desktop Navbar -->
+          <div class="col-6 col-md-9 d-flex justify-content-end">
+            <nav class="desktop-nav d-none d-md-block">
+              <ul class="d-flex list-unstyled mb-0">
+                <li><a href="index.html #home" class="px-3 py-2">Home</a></li>
+                <li><a href="about.html" class="px-3 py-2">About</a></li>
+                <li><a href="events.html" class="px-3 py-2">Events</a></li>
+                <li><a href="contact.html" class="px-3 py-2">Call US</a></li>
+                <li><button onclick="setLanguage('en')"><img src="Photos/english.png" alt="" width="30px"
+                      height="30px"></button> </li>
+                <li><button onclick="setLanguage('ar')"><img src="Photos/ar.jpg" alt="" width="30px"
+                      height="30px"></button></li>
+              </ul>
+            </nav>
 
-          <!-- Mobile Menu Button -->
-          <button class="menu-toggle d-md-none">
-            <i class="fa-solid fa-bars"></i>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <!-- Mobile Sidebar -->
-    <nav>
-      <ul class="sidebar list-unstyled">
-        <li>
-          <button class="close">
-            <i class="fa fa-close text-white"></i>
-          </button>
-        </li>
-       <li><a href="/events-website/#home" class="px-3 py-2">Home</a></li>
-        <li><a href="/events-website/#about" class="px-3 py-2">About</a></li>
-        <li><a href="/events-website/#events" class="px-3 py-2">Events</a></li>
-        <li><a href="/events-website/#call" class="px-3 py-2">Call US</a></li>
-      </ul>
-    </nav>
-
-    <!--hero section-->
-    <div class="header-text position-absolute top-50 start-0 translate-middle-y w-100">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-12">
-            <h1 class="text-white mb-0 px-3 px-md-5 display-6 display-md-4 display-lg-3 display-xl-2 fw-bold">
-              we made your <span class="great-text">Great</span> moment..
-            </h1>
+            <!-- Mobile Menu Button -->
+            <button class="menu-toggle d-md-none">
+              <i class="fa-solid fa-bars"></i>
+            </button>
           </div>
         </div>
       </div>
+
+      <!-- Mobile Sidebar -->
+      <nav id="home">
+        <ul class="sidebar list-unstyled">
+          <li>
+            <button class="close">
+              <i class="fa fa-close text-white"></i>
+            </button>
+          </li>
+          <li><a href="index.html #home" class="px-3 py-2">Home</a></li>
+          <li><a href="about.html" class="px-3 py-2">About</a></li>
+          <li><a href="events.html" class="px-3 py-2">Events</a></li>
+          <li><a href="contact.html" class="px-3 py-2">Call US</a></li>
+          <li><button onclick="setLanguage('en')" class="po"><img src="Photos/english.png" alt="" width="30px"
+                height="30px"></button> </li>
+          <li><button onclick="setLanguage('ar')" class="po"><img src="Photos/ar.jpg" alt="" width="30px"
+                height="30px"></button></li>
+        </ul>
+      </nav>
+
+      <!--hero section-->
+      <div class="header-text position-absolute top-50 start-0 translate-middle-y w-100">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="text-white mb-0 px-3 px-md-5 display-6 display-md-4 display-lg-3 display-xl-2 fw-bold">
+                we made your <span class="great-text">Great</span> moment..
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header section end -->
+      <h2 class="Call-Us"> Call Us</h2>
+
+  <section class="contact-section">
+
+    <!-- contact-info section -->
+    <div class="contact-info">
+      <h3> contact info</h3>
+      <p>📞 phone: 0991114578</p>
+      <p>📧 email:nabddimashq@gmail.com</p>
+      <p>📍address: syria-damascus <br>
+        <iframe style="margin-top: 15px;" width="200px" height="200px"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.018045250587!2d36.28067779363594!3d33.51174643645402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1518e0b4816d3d5f%3A0x80913fe6396f6b34!2z2KfZhNmF2LnZh9ivINin2YTYudin2YTZiiDZhNmE2YHZhtmI2YYg2KfZhNmF2LPYsdit2YrYqS4!5e0!3m2!1sar!2suk!4v1760438196935!5m2!1sar!2suk"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </p>
     </div>
-  </header>
-  <!-- header section end -->
+
+    <!--  massege Form section -->
+    <form class="massegeForm" >
+      <label for="name">Enter Name:</label>
+      <input type="text" class="name" name="name" required>
+
+
+       <label for="Phone">Enter phone number:</label>
+      <input type="text" class="phone" name="phone" required>
+
+
+      <label for="email">Enter email:</label>
+      <input type="email" class="email" name="email" required>
+
+      <label for="message">message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+     <input type="submit" value="send" >
+    </form>
+
+    
+  </section>
+
+
+
+
+    <!-- moving up button -->
+    <a href="#header"> <button class="moving"><i class="fas fa-angle-up"></i></button></a>
+
+
+   <!-- start footer section -->
+    <footer id="call">
+      <div class="container">
+        <div class="row justify-content-between">
+
+          <div class="container contact-us col-md-3  col-xs-12">
+
+            <div class="row justify-content-between">
+              <a href="contact.html" target="_blank">
+                <h2 class="col-12">Contact us</h2>
+              </a>
+              <a target="_blank" href="" class="col-12"> <i class="fa fa-phone"></i>phone: 0991114578</a>
+              <a target="_blank" href="mailto:info@svuonline.org" class="col-12"> <i
+                  class="fa fa-at"></i>E-mail:nabddimashq@gmail.com </a>
+              <a target="_blank" href="https://www.svuonline.org/" class="col-12"> <i class="fa fa-globe"></i>
+                www.nabd-dimashq@info.net</a>
+              <a target="_blank" href="https://www.google.com/maps/place/Damascus,+Syria" class="col-12"> <i
+                  class="fa fa-map-marker "></i> syria-damascus</a>
+
+            </div>
+
+          </div>
+          <div class="container social-media col-md-3 col-xs-12">
+
+
+            <div class="row justify-content-between">
+              <a href="contact.html" target="">
+                <h2 class="col-12 ">Follow us</h2>
+              </a>
+              <a target="_blank" href="https://www.facebook.com/share/12DibUjfkss/" class="col-12"> <i
+                  class="fa-brands fa-facebook"></i><span> Facebook</span></a>
+              <a target="_blank" href="http://instagram.com/syrian_virtual_university" class="col-12"> <i
+                  class="fa-brands fa-instagram"></i> <span>Instagram</span></a>
+              <a target="_blank" href="https://t.me/svu_news_ch" class="col-12"> <i class="fa-brands fa-whatsapp"></i>
+                <span>Whatsapp</span></a>
+              <a target="_blank" href="https://x.com/SVU_Syria?t=weNSpXwB4dKIfYVGSAOSHQ&s=09" class="col-12"> <i
+                  class="fa-brands fa-twitter"></i> <span>Twitter</span></a>
+            </div>
+
+
+
+
+          </div>
+
+        </div>
+
+        <div class="copy-right">
+          <hr>
+          &copy 2025 NABD DIMASHQ .All rights reserved
+        </div>
+      </div>
+
+    </footer>
+    <!-- end footer section -->
+
+  </section>
+
+  <section class="arabic">
+     <!-- header section start -->
+    <header class="position-relative" id="headerar">
+      <div class="container py-3">
+        <div class="row align-items-center">
+          <!-- Logo -->
+          <div class="col-6 col-md-3">
+            <a href="#" class="logo">
+              <img src="Photos/logo/logo1.jpg" alt="logo" class="img-fluid">
+            </a>
+          </div>
+
+          <!-- Desktop Navbar -->
+          <div class="col-6 col-md-9 d-flex justify-content-end">
+            <nav class="desktop-nav d-none d-md-block">
+              <ul class="d-flex list-unstyled mb-0">
+                <li><a href="index.html #home" class="px-3 py-2">الرئيسية</a></li>
+                <li><a href="about.html " class="px-3 py-2">عن الدليل</a></li>
+                <li><a href="events.html" class="px-3 py-2">الفعاليات</a></li>
+                <li><a href="contact.html" class="px-3 py-2">اتصل بنا</a></li>
+                <li><button onclick="setLanguage('en')"><img src="Photos/english.png" alt="" width="30px"
+                      height="30px"></button> </li>
+                <li><button onclick="setLanguage('ar')"><img src="Photos/ar.jpg" alt="" width="30px"
+                      height="30px"></button></li>
+              </ul>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button class="menu-toggle d-md-none">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Sidebar -->
+      <nav id="home">
+        <ul class="sidebar list-unstyled">
+          <li>
+            <button class="close">
+              <i class="fa fa-close text-white"></i>
+            </button>
+          </li>
+          <li><a href="index.html #home" class="px-3 py-2">الرئيسية</a></li>
+          <li><a href="about.html" class="px-3 py-2">عن الدليل</a></li>
+          <li><a href="events.html" class="px-3 py-2">الفعاليات</a></li>
+          <li><a href="contact.html" class="px-3 py-2">اتصل بنا</a></li>
+          <li><button onclick="setLanguage('en')" class="po"><img src="Photos/english.png" alt="" width="30px"
+                height="30px"></button> </li>
+          <li><button onclick="setLanguage('ar')" class="po"><img src="Photos/ar.jpg" alt="" width="30px"
+                height="30px"></button></li>
+        </ul>
+      </nav>
+
+      <!--hero section-->
+      <div class="header-text position-absolute top-50 start-0 translate-middle-y w-100">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="heroar text-white mb-0 px-3 px-md-5 display-6 display-md-4 display-lg-3 display-xl-2 fw-bold" >
+                we made your <span class="great-text">Great</span> moment..
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header section end -->
+
+    <h2 class="Call-Us">اتصل بنا</h2>
+
+  <section class="contact-section">
+    <!-- نموذج الإرسال -->
+    <form class="massegeForm contact-form">
+      <label for="name">الاسم الكامل:</label>
+      <input type="text" class="name" name="name" required>
+
+       <label for="Phone">رقم الهاتف:</label>
+      <input type="text" class="phone" name="phone" required>
+
+
+      <label for="email">البريد الإلكتروني:</label>
+      <input type="email" class="email" name="email" required>
+
+      <label for="message">الرسالة:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">إرسال</button>
+    </form>
+
+    <!-- معلومات الاتصال -->
+    <div class="contact-info">
+      <h3>معلومات الاتصال</h3>
+      <p>📞 الهاتف: 0991114587</p>
+      <p>📧 البريد الإلكتروني: nabddimashq@gmail.com</p>
+      <p>📍 العنوان: دمشق - سوريا <br>
+         <iframe style="margin-top: 15px;" width="200px" height="200px"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3956.018045250587!2d36.28067779363594!3d33.51174643645402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1518e0b4816d3d5f%3A0x80913fe6396f6b34!2z2KfZhNmF2LnZh9ivINin2YTYudin2YTZiiDZhNmE2YHZhtmI2YYg2KfZhNmF2LPYsdit2YrYqS4!5e0!3m2!1sar!2suk!4v1760438196935!5m2!1sar!2suk"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </p>
+    </div>
+  </section>
+
+
+
+
+
+     <!-- moving up button -->
+    <a href="#headerar"> <button class="moving"><i class="fas fa-angle-up"></i></button></a>
 
 
     <!-- start footer section -->
-  <footer>
-    <div class="container">
-      <div class="row justify-content-between">
+    <footer id="callar">
+      <div class="container">
+        <div class="row justify-content-between">
 
-        <div class="container contact-us col-md-3  col-xs-12">
+          <div class="container contact-us col-md-3  col-xs-12">
 
-          <div class="row justify-content-between">
-             <a href="contact.html" target="_blank"><h2 class="col-12">Contact us</h2></a>
-            <a target="_blank" href="" class="col-12"> <i class="fa fa-phone"></i>phone: 0991114578</a>
-            <a target="_blank" href="mailto:info@svuonline.org" class="col-12"> <i class="fa fa-at"></i>E-mail:nabddimashq@gmail.com </a>
-            <a  target="_blank" href="https://www.svuonline.org/" class="col-12"> <i class="fa fa-globe"></i> www.nabd-dimashq@info.net</a>
-            <a target="_blank" href="" class="col-12"> <i class="fa fa-map-marker "></i> syria-damascus</a>
+            <div class="row justify-content-between">
+              <a href="contact.html" target="_blank">
+                <h2 class="col-12">اتصل بنا</h2>
+              </a>
+              <a target="_blank" href="" class="col-12"> <i class="fa fa-phone"></i>هاتف: 0991114578</a>
+              <a target="_blank" href="mailto:info@svuonline.org" class="col-12"> <i
+                  class="fa fa-at"></i>E-mail:nabddimashq@gmail.com </a>
+              <a target="_blank" href="https://www.svuonline.org/" class="col-12"> <i class="fa fa-globe"></i>
+                www.nabd-dimashq@info.net</a>
+              <a target="_blank" href="https://www.google.com/maps/place/Damascus,+Syria" class="col-12"> <i
+                  class="fa fa-map-marker "></i> syria-damascus</a>
+
+            </div>
+
+          </div>
+          <div class="container social-media col-md-3 col-xs-12">
+
+
+            <div class="row justify-content-between">
+              <a href="contact.html" target="">
+                <h2 class="col-12 ">تابعنا</h2>
+              </a>
+              <a target="_blank" href="https://www.facebook.com/share/12DibUjfkss/" class="col-12"> <i
+                  class="fa-brands fa-facebook"></i><span> Facebook</span></a>
+              <a target="_blank" href="http://instagram.com/syrian_virtual_university" class="col-12"> <i
+                  class="fa-brands fa-instagram"></i> <span>Instagram</span></a>
+              <a target="_blank" href="https://t.me/svu_news_ch" class="col-12"> <i class="fa-brands fa-whatsapp"></i>
+                <span>Whatsapp</span></a>
+              <a target="_blank" href="https://x.com/SVU_Syria?t=weNSpXwB4dKIfYVGSAOSHQ&s=09" class="col-12"> <i
+                  class="fa-brands fa-twitter"></i> <span>Twitter</span></a>
+            </div>
+
+
+
 
           </div>
 
         </div>
-        <div class="container social-media col-md-3 col-xs-12">
 
-
-          <div class="row justify-content-between">
-           <a href="contact.html" target="">  <h2 class="col-12 ">Follow us</h2></a>
-            <a target="_blank" href="https://www.facebook.com/share/12DibUjfkss/" class="col-12"> <i class="fa-brands fa-facebook"></i><span> Facebook</span></a>
-            <a target="_blank" href="http://instagram.com/syrian_virtual_university" class="col-12"> <i class="fa-brands fa-instagram"></i> <span>Instagram</span></a>
-            <a target="_blank" href="https://t.me/svu_news_ch" class="col-12"> <i class="fa-brands fa-whatsapp"></i> <span>Whatsapp</span></a>
-            <a target="_blank" href="https://x.com/SVU_Syria?t=weNSpXwB4dKIfYVGSAOSHQ&s=09" class="col-12"> <i class="fa-brands fa-twitter"></i> <span>Twitter</span></a>
-          </div>
-
-
-
-
+        <div class="copy-right">
+          <hr>
+          &copy 2025 نبض دمشق كل الحقوق محفوظة
         </div>
-
       </div>
 
-      <div class="copy-right">
-        <hr>
-        &copy 2025 NABD DIMASHQ .All rights reserved
-      </div>
-    </div>
-
-
-   
-
-  </footer>
-  <!-- end footer section -->
-
-
+    </footer>
+    <!-- end footer section -->
+  </section>
 
 
 
@@ -132,9 +364,7 @@
 
 
   </script>
+  <script src="js/contact.js"></script>
 </body>
 
 </html>
-
-
-
