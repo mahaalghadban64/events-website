@@ -157,8 +157,5 @@ body[dir="ltr"]{
         align-items: center;
       }
     }
-   /* لمعرفة إذا الفوتر مكرر */
-footer {
-    border: 3px solid red !important;
-    background: yellow !important;
-}
+  
+
