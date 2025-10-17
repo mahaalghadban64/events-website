@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
   <meta charset="UTF-8">
@@ -13,319 +13,675 @@
   <title>Nabd Dimashq</title>
 </head>
 
-<body>
-  <!-- header section start -->
-  <header class="position-relative" id="header">
-    <div class="container py-3">
-      <div class="row align-items-center">
-        <!-- Logo -->
-        <div class="col-6 col-md-3">
-          <a href="#" class="logo">
-            <img src="Photos/logo/logo1.jpg" alt="logo" class="img-fluid">
+<body dir="ltr" lang="en">
+  <section class="english">
+
+    <!-- header section start -->
+    <header class="position-relative" id="header">
+      <div class="container py-3">
+        <div class="row align-items-center">
+          <!-- Logo -->
+          <div class="col-6 col-md-3">
+            <a href="#" class="logo">
+              <img src="Photos/logo/logo1.jpg" alt="logo" class="img-fluid">
+            </a>
+          </div>
+
+          <!-- Desktop Navbar -->
+          <div class="col-6 col-md-9 d-flex justify-content-end">
+            <nav class="desktop-nav d-none d-md-block">
+              <ul class="d-flex list-unstyled mb-0">
+                <li><a href="#home" class="px-3 py-2">Home</a></li>
+                <li><a href="#about" class="px-3 py-2">About</a></li>
+                <li><a href="#events" class="px-3 py-2">Events</a></li>
+                <li><a href="#call" class="px-3 py-2">Call US</a></li>
+                <li><button onclick="setLanguage('en')"><img src="Photos/english.png" alt="" width="30px"
+                      height="30px"></button> </li>
+                <li><button onclick="setLanguage('ar')"><img src="Photos/ar.jpg" alt="" width="30px"
+                      height="30px"></button></li>
+              </ul>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button class="menu-toggle d-md-none">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Sidebar -->
+      <nav id="home">
+        <ul class="sidebar list-unstyled">
+          <li>
+            <button class="close">
+              <i class="fa fa-close text-white"></i>
+            </button>
+          </li>
+          <li><a href="#home" class="px-3 py-2">Home</a></li>
+          <li><a href="#about" class="px-3 py-2">About</a></li>
+          <li><a href="#events" class="px-3 py-2">Events</a></li>
+          <li><a href="#call" class="px-3 py-2">Call US</a></li>
+          <li><button onclick="setLanguage('en')" class="po"><img src="Photos/english.png" alt="" width="30px"
+                height="30px"></button> </li>
+          <li><button onclick="setLanguage('ar')" class="po"><img src="Photos/ar.jpg" alt="" width="30px"
+                height="30px"></button></li>
+        </ul>
+      </nav>
+
+      <!--hero section-->
+      <div class="header-text position-absolute top-50 start-0 translate-middle-y w-100">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="text-white mb-0 px-3 px-md-5 display-6 display-md-4 display-lg-3 display-xl-2 fw-bold">
+                we made your <span class="great-text">Great</span> moment..
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header section end -->
+    
+      <!-- student name section end       -->
+    <!-- start trending event -->
+
+
+    <section class="trading-event" id="events">
+      <h2>Trending Events</h2>
+      <div class="container">
+        <div class="slides">
+          <a target="_blank" href="event.html">
+            <img src="Photos/events/sliders/slide1.jpg">
+            <img src="Photos/events/sliders/slide2.jpg">
+            <img src="Photos/events/sliders/slide3.jpg">
           </a>
         </div>
+        <div onclick="side_slide(-1)" class="slide left">
+          <span class="fas fa-angle-left"> </span>
+        </div>
+        <div onclick="side_slide(1)" class="slide right">
+          <span class="fas fa-angle-right"> </span>
+        </div>
 
-        <!-- Desktop Navbar -->
-        <div class="col-6 col-md-9 d-flex justify-content-end">
-          <nav class="desktop-nav d-none d-md-block">
-            <ul class="d-flex list-unstyled mb-0">
-              <li><a href="/events-website/#home" class="px-3 py-2">Home</a></li>
-              <li><a href="/events-website/#about" class="px-3 py-2">About</a></li>
-              <li><a href="/events-website/#events" class="px-3 py-2">Events</a></li>
-              <li><a href="/events-website/#call" class="px-3 py-2">Call US</a></li>
-            </ul>
-          </nav>
+        <div class="btm-sliders">
+          <span onclick="btm_slide(1)"> </span>
+          <span onclick="btm_slide(2)"> </span>
+          <span onclick="btm_slide(3)"> </span>
 
-          <!-- Mobile Menu Button -->
-          <button class="menu-toggle d-md-none">
-            <i class="fa-solid fa-bars"></i>
-          </button>
         </div>
       </div>
-    </div>
+    </section>
 
-    <!-- Mobile Sidebar -->
-    <nav  id="home">
-      <ul class="sidebar list-unstyled">
-        <li>
-          <button class="close">
-            <i class="fa fa-close text-white"></i>
-          </button>
-        </li>
-        <li><a href="/events-website/#home" class="px-3 py-2">Home</a></li>
-        <li><a href="/events-website/#about" class="px-3 py-2">About</a></li>
-        <li><a href="/events-website/#events" class="px-3 py-2">Events</a></li>
-        <li><a href="/events-website/#call" class="px-3 py-2">Call US</a></li>
-      </ul>
-    </nav>
+    <!-- end trending event -->
 
-    <!--hero section-->
-    <div class="header-text position-absolute top-50 start-0 translate-middle-y w-100">
-      <div class="container-fluid">
+    <!-- end trending event -->
+
+
+
+    <!-- start catigories section -->
+
+
+    <section class="catigories">
+      <div class="container">
         <div class="row">
-          <div class="col-12">
-            <h1 class="text-white mb-0 px-3 px-md-5 display-6 display-md-4 display-lg-3 display-xl-2 fw-bold">
-              we made your <span class="great-text">Great</span> moment..
-            </h1>
+          <a href="events.html" target="_blank" style="text-decoration: none;">
+            <h2>All Catigories</h2>
+          </a>
+          <div class="category-item col-lg-3 col-md-6 col-sm-6 col-12"> <img src="Photos/events/catigories/art.jpg"
+              alt="">
+            <p><a target="_blank" href="events.html?type=culture">Art & Culture</a></p>
           </div>
+          <div class="category-item col-lg-3 col-md-6 col-sm-6 col-12"> <img src="Photos/events/catigories/science.jpg"
+              alt="">
+            <p><a target="_blank" href="events.html?type=educational">Educational</a></p>
+          </div>
+          <div class="category-item col-lg-3 col-md-6 col-sm-6 col-12"><img
+              src="Photos/events/catigories/entertainment.jpg" alt="">
+            <p><a target="_blank" href="events.html?type=entertanments">Entertainment</a></p>
+          </div>
+          <div class="category-item col-lg-3 col-md-6 col-sm-6 col-12"><img src="Photos/events/catigories/sport.jpg"
+              alt="">
+            <p><a target="_blank" href="events.html?type=sport">Sport </a></p>
+          </div>
+
+
         </div>
       </div>
-    </div>
-  </header>
-  <!-- header section end -->
-  <!-- start events sections -->
-
-  <!-- start trending event -->
-  <!-- start trending event -->
-
-
-  <section class="trading-event" id="events">
-    <h2>Tranding Events</h2>
-    <div class="container">
-      <div class="slides">
-        <a  target="_blank" href="event.html">
-          <img src="Photos/events/sliders/slide1.jpg">
-          <img src="Photos/events/sliders/slide2.jpg">
-          <img src="Photos/events/sliders/slide3.jpg">
-        </a>
-      </div>
-      <div onclick="side_slide(-1)" class="slide left">
-        <span class="fas fa-angle-left"> </span>
-      </div>
-      <div onclick="side_slide(1)" class="slide right">
-        <span class="fas fa-angle-right"> </span>
-      </div>
-
-      <div class="btm-sliders">
-        <span onclick="btm_slide(1)"> </span>
-        <span onclick="btm_slide(2)"> </span>
-        <span onclick="btm_slide(3)"> </span>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- end trending event -->
-
-  <!-- end trending event -->
-
-
-
-<!-- start catigories section -->
-
-
-  <section class="catigories">
-    <div class="container">
-      <div class="row">
-       <a href="events.html" target="_blank"> <h2>All Catigories</h2></a>
-        <div class="category-item col-lg-3 col-md-6 col-sm-6 col-12"> <img src="Photos/events/catigories/art.jpg"
-            alt="">
-          <p><a target="_blank"  href="events.html">Art & Culture</a></p>
-        </div>
-        <div class="category-item col-lg-3 col-md-6 col-sm-6 col-12"> <img src="Photos/events/catigories/science.jpg"
-            alt="">
-          <p><a target="_blank"  href="events.html">Educational</a></p>
-        </div>
-        <div class="category-item col-lg-3 col-md-6 col-sm-6 col-12"><img
-            src="Photos/events/catigories/entertainment.jpg" alt="">
-          <p><a  target="_blank" href="events.html">Entertainment</a></p>
-        </div>
-        <div class="category-item col-lg-3 col-md-6 col-sm-6 col-12"><img src="Photos/events/catigories/sport.jpg"
-            alt="">
-          <p><a  target="_blank" href="events.html">Sport </a></p>
-        </div>
-
-
-      </div>
-    </div>
 
 
 
 
-  </section>
-  <!-- end catigories section -->
-   <!-- start latest events section -->
+    </section>
+    <!-- end catigories section -->
+    <!-- start latest events section -->
     <div class="latest-events">
       <h2>latest Events</h2>
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="card  col-lg-4 col-sm-12">
-          <img src="Photos/events/latest events/music lina.jpg" alt="">
-          <div class="intro">
-            <h2>Dmascuse Night</h2>
-            <p>
-              <span>Lena Chamamyan</span> <br>
-              Opera House <br> 10 OCT
-              <br> friday 9pm <br> 100$ <br>
-                  <a href="event.html" target="_blank"> <button>More Detiles</button></a>
-            </p>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="card  col-lg-4 col-sm-12">
+            <img src="Photos/events/latest events/music lina.jpg" alt="">
+            <div class="intro">
+              <h2>Dmascuse Night</h2>
+              <p>
+                <span>Lena Chamamyan</span> <br>
+                Opera House <br> 10 OCT
+                <br> friday 9pm <br> 100$ <br>
+                <a href="event.html?catrgor=entertainment&event=event1"><button>More Detiles</button></a>
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="card  col-lg-4 col-sm-12">
-          <img src="Photos/events/latest events/music iyad.jpg" alt="">
-          <div class="intro">
-            <h2>Dmascuse Night</h2>
-            <p>
-              <span>Iyad Rimawy</span> <br>
-              Opera House <br> 12 OCT
-              <br> sunday 9pm <br> 100$ <br>
-               <a href="event.html" target="_blank"> <button>More Detiles</button></a>
-            </p>
+          <div class="card  col-lg-4 col-sm-12">
+            <img src="Photos/events/latest events/music iyad.jpg" alt="">
+            <div class="intro">1
+              <h2>Dmascuse Night</h2>
+              <p>
+                <span>Iyad Rimawy</span> <br>
+                Opera House <br> 12 OCT
+                <br> sunday 9pm <br> 100$ <br>
+                <a href="event.html?catrgor=entertainment&event=event2"><button>More Detiles</button></a>
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="card col-lg-4 col-sm-12">
-          <img src="Photos/events/latest events/mach.jpg" alt="">
-          <div class="intro">
-            <h2>Basketball mach</h2>
-            <p>
-              <span>alwahdah x alhekma</span> <br>
-              alnajma stadium  <br> 7 OCT
-              <br> thursday 17:00 pm <br> 15$ <br>
-                  <a href="event.html" target="_blank"> <button>More Detiles</button></a>
-            </p>
+          <div class="card col-lg-4 col-sm-12">
+            <img src="Photos/events/latest events/mach.jpg" alt="">
+            <div class="intro">
+              <h2>Basketball mach</h2>
+              <p>
+                <span>alwahdah x alhekma</span> <br>
+                alnajma stadium <br> 7 OCT
+                <br> thursday 17:00 pm <br> 15$ <br>
+                <a href="event.html?catrgor=sport&event=event15"><button>More Detiles</button></a>
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="card col-lg-4 col-sm-12">
-          <img src="Photos/events/latest events/texpo.jpg" alt="">
-          <div class="intro">
-            <h2>Expo Land</h2>
-            <p>
-              <span>Technology Exhibition</span> <br>
-              Damascus-Exhibition City <br> 17 OCT
-              <br> friday 2pm <br> 25$ <br>
-                 <a href="event.html" target="_blank"> <button>More Detiles</button></a>
-            </p>
+          <div class="card col-lg-4 col-sm-12">
+            <img src="Photos/events/latest events/texpo.jpg" alt="">
+            <div class="intro">
+              <h2>Expo Land</h2>
+              <p>
+                <span>Technology Exhibition</span> <br>
+                Damascus-Exhibition City <br> 17 OCT
+                <br> friday 2pm <br> 25$ <br>
+                <a href="event.html?catrgor=education&event=event17"><button>More Detiles</button></a>
+              </p>
+            </div>
           </div>
-        </div>
-         <div class="card col-lg-4 col-sm-12">
-          <img src="Photos/events/latest events/art.jpg" alt="">
-          <div class="intro">
-            <h2>ancient city art</h2>
-            <p>
-              <span>Damascus gallery</span> <br>
-              Asaad basha khan <br> 14 OCT
-              <br> Monday 13pm <br> 10$ <br>
-              <a href="event.html" target="_blank"> <button>More Detiles</button></a>
-            </p>
+          <div class="card col-lg-4 col-sm-12">
+            <img src="Photos/events/latest events/art.jpg" alt="">
+            <div class="intro">
+              <h2>ancient city art</h2>
+              <p>
+                <span>Damascus gallery</span> <br>
+                Asaad basha khan <br> 14 OCT
+                <br> Monday 13pm <br> 10$ <br>
+                <a href="event.html?catrgor=culture&event=event9"><button>More Detiles</button></a>
+              </p>
+            </div>
           </div>
-        </div>
-         <div class="card  col-lg-4 col-sm-12">
-          <img src="Photos/events/latest events/marathon.jpg" alt="">
-          <div class="intro">
-            <h2>Damascus Marathon</h2>
-            <p>
-             
-              Sport City <br> 26 SEP
-              <br> friday 9am<br> 20$  <br>
-             <a href="event.html" target="_blank"> <button>More Detiles</button></a>
-            </p>
+          <div class="card  col-lg-4 col-sm-12">
+            <img src="Photos/events/latest events/marathon.jpg" alt="">
+            <div class="intro">
+              <h2>Damascus Marathon</h2>
+              <p>
+
+                Sport City <br> 26 SEP
+                <br> friday 9am<br> 20$ <br>
+                <a href="event.html?catrgor=sport&event=event16"><button>More Detiles</button></a>
+              </p>
+            </div>
           </div>
+
         </div>
-        
       </div>
     </div>
-  </div>
     <!-- end latest events section -->
 
 
 
 
 
-  <!-- end events sections -->
-  <!-- start about us section -->
-  <section class="about-us" id="about">
+    <!-- end events sections -->
+    <!-- start about us section -->
+    <section class="about-us" id="about">
 
-    <div class="container">
-      <div class="row justify-content-between ">
-        <div class="about-us-info col-lg-6 col-md-6 col-sm-12 ">
-          <h1>Nabd Dimashq</h1>
-          <p>we have a cteative team that pays attention to the smallest details to creat an <span>unforgettable
-              event..</span> <br>
-            <span>NABD DIMASHQ</span> is an online platform that bring together the latest culture,artistic,sports,and
-            scientific events happenning in Damascus. <br>
-            Our mission is to make it easy for you to discuver and join events you care about,all in one orgnized and
-            user-friendly place _ keeping you connected to the city's vibrant pluse. <br>
-            <a  target="_blank"  href="about.html"><button class="contact">About us</button></a>
-          </p>
-        </div>
+      <div class="container">
+        <div class="row justify-content-between ">
+          <div class="about-us-info col-lg-6 col-md-6 col-sm-12 ">
+            <h1>Nabd Dimashq</h1>
+            <p>we have a cteative team that pays attention to the smallest details to creat an <span>unforgettable
+                event..</span> <br>
+              <span>NABD DIMASHQ</span> is an online platform that bring together the latest culture,artistic,sports,and
+              scientific events happenning in Damascus. <br>
+              Our mission is to make it easy for you to discuver and join events you care about,all in one orgnized and
+              user-friendly place _ keeping you connected to the city's vibrant pluse. <br>
+              <a target="_blank" href="about.html"><button class="contact">About us</button></a>
+            </p>
+          </div>
 
-        <div class="about-us-img col-lg-6 col-md-6 col-sm-12 ">
-          <img src="Photos/others/id.jpg" alt="img">
-        </div>
-
-      </div>
-  </section>
-
-  </div>
-
-
-
-
-
-
-  <!-- end about us section -->
-
-
-
-   <!-- moving up button -->
- <a href="#header">  <button class="moving" ><i class="fas fa-angle-up"></i></button></a>
-
-
-  <!-- start footer section -->
-  <footer id="call">
-    <div class="container">
-      <div class="row justify-content-between">
-
-        <div class="container contact-us col-md-3  col-xs-12">
-
-          <div class="row justify-content-between">
-            <a href="contact.html" target="_blank"><h2 class="col-12">Contact us</h2></a>
-            <a target="_blank" href="" class="col-12"> <i class="fa fa-phone"></i>phone: 0991114578</a>
-            <a target="_blank" href="mailto:info@svuonline.org" class="col-12"> <i class="fa fa-at"></i>E-mail:nabddimashq@gmail.com </a>
-            <a  target="_blank" href="https://www.svuonline.org/" class="col-12"> <i class="fa fa-globe"></i> www.nabd-dimashq@info.net</a>
-            <a target="_blank" href="https://www.google.com/maps/place/Damascus,+Syria" class="col-12"> <i class="fa fa-map-marker "></i> syria-damascus</a>
-
+          <div class="about-us-img col-lg-6 col-md-6 col-sm-12 ">
+            <img src="Photos/others/id.jpg" alt="img">
           </div>
 
         </div>
-        <div class="container social-media col-md-3 col-xs-12">
+    </section>
 
-
-          <div class="row justify-content-between">
-          <a href="contact.html" target="">  <h2 class="col-12 ">Follow us</h2></a>
-            <a target="_blank" href="https://www.facebook.com/share/12DibUjfkss/" class="col-12"> <i class="fa-brands fa-facebook"></i><span> Facebook</span></a>
-            <a target="_blank" href="http://instagram.com/syrian_virtual_university" class="col-12"> <i class="fa-brands fa-instagram"></i> <span>Instagram</span></a>
-            <a target="_blank" href="https://t.me/svu_news_ch" class="col-12"> <i class="fa-brands fa-whatsapp"></i> <span>Whatsapp</span></a>
-            <a target="_blank" href="https://x.com/SVU_Syria?t=weNSpXwB4dKIfYVGSAOSHQ&s=09" class="col-12"> <i class="fa-brands fa-twitter"></i> <span>Twitter</span></a>
-          </div>
-
-
-
-
-        </div>
-
-      </div>
-
-      <div class="copy-right">
-        <hr>
-        &copy 2025 NABD DIMASHQ .All rights reserved
-      </div>
     </div>
 
-  </footer>
-  <!-- end footer section -->
 
+
+
+
+
+    <!-- end about us section -->
+
+
+
+    <!-- moving up button -->
+    <a href="#header"> <button class="moving"><i class="fas fa-angle-up"></i></button></a>
+
+
+    <!-- start footer section -->
+    <footer id="call">
+      <div class="container">
+        <div class="row justify-content-between">
+
+          <div class="container contact-us col-md-3  col-xs-12">
+
+            <div class="row justify-content-between">
+              <a href="contact.html" target="_blank">
+                <h2 class="col-12">Contact us</h2>
+              </a>
+              <a target="_blank" href="" class="col-12"> <i class="fa fa-phone"></i>phone: 0991114578</a>
+              <a target="_blank" href="mailto:info@svuonline.org" class="col-12"> <i
+                  class="fa fa-at"></i>E-mail:nabddimashq@gmail.com </a>
+              <a target="_blank" href="https://www.svuonline.org/" class="col-12"> <i class="fa fa-globe"></i>
+                www.nabd-dimashq@info.net</a>
+              <a target="_blank" href="https://www.google.com/maps/place/Damascus,+Syria" class="col-12"> <i
+                  class="fa fa-map-marker "></i> syria-damascus</a>
+
+            </div>
+
+          </div>
+          <div class="container social-media col-md-3 col-xs-12">
+
+
+            <div class="row justify-content-between">
+              <a href="contact.html" target="">
+                <h2 class="col-12 ">Follow us</h2>
+              </a>
+              <a target="_blank" href="https://www.facebook.com/share/12DibUjfkss/" class="col-12"> <i
+                  class="fa-brands fa-facebook"></i><span> Facebook</span></a>
+              <a target="_blank" href="http://instagram.com/syrian_virtual_university" class="col-12"> <i
+                  class="fa-brands fa-instagram"></i> <span>Instagram</span></a>
+              <a target="_blank" href="https://t.me/svu_news_ch" class="col-12"> <i class="fa-brands fa-whatsapp"></i>
+                <span>Whatsapp</span></a>
+              <a target="_blank" href="https://x.com/SVU_Syria?t=weNSpXwB4dKIfYVGSAOSHQ&s=09" class="col-12"> <i
+                  class="fa-brands fa-twitter"></i> <span>Twitter</span></a>
+            </div>
+
+
+
+
+          </div>
+
+        </div>
+
+        <div class="copy-right">
+          <hr>
+          &copy 2025 NABD DIMASHQ .All rights reserved
+        </div>
+      </div>
+
+    </footer>
+    <!-- end footer section -->
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+  <section class="arabic">
+
+    <!-- header section start -->
+    <header class="position-relative" id="headerar">
+      <div class="container py-3">
+        <div class="row align-items-center">
+          <!-- Logo -->
+          <div class="col-6 col-md-3">
+            <a href="#" class="logo">
+              <img src="Photos/logo/logo1.jpg" alt="logo" class="img-fluid">
+            </a>
+          </div>
+
+          <!-- Desktop Navbar -->
+          <div class="col-6 col-md-9 d-flex justify-content-end">
+            <nav class="desktop-nav d-none d-md-block">
+              <ul class="d-flex list-unstyled mb-0">
+                <li><a href="#headerar" class="px-3 py-2">الرئيسية</a></li>
+                <li><a href="#aboutar" class="px-3 py-2">عن الدليل</a></li>
+                <li><a href="#eventsar" class="px-3 py-2">الفعاليات</a></li>
+                <li><a href="#callar" class="px-3 py-2">اتصل بنا</a></li>
+                <li><button onclick="setLanguage('en')"><img src="Photos/english.png" alt="" width="30px"
+                      height="30px"></button> </li>
+                <li><button onclick="setLanguage('ar')"><img src="Photos/ar.jpg" alt="" width="30px"
+                      height="30px"></button></li>
+              </ul>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button class="menu-toggle d-md-none">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Sidebar -->
+      <nav id="home">
+        <ul class="sidebar list-unstyled">
+          <li>
+            <button class="close">
+              <i class="fa fa-close text-white"></i>
+            </button>
+          </li>
+          <li><a href="#headerar" class="px-3 py-2">الرئيسية</a></li>
+          <li><a href="#aboutar" class="px-3 py-2">عن الدليل</a></li>
+          <li><a href="#eventsar" class="px-3 py-2">الفعاليات</a></li>
+          <li><a href="#callar" class="px-3 py-2">اتصل بنا</a></li>
+          <li><button onclick="setLanguage('en')" class="po"><img src="Photos/english.png" alt="" width="30px"
+                height="30px"></button> </li>
+          <li><button onclick="setLanguage('ar')" class="po"><img src="Photos/ar.jpg" alt="" width="30px"
+                height="30px"></button></li>
+        </ul>
+      </nav>
+
+      <!--hero section-->
+      <div class="header-text position-absolute top-50 start-0 translate-middle-y w-100">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="heroar text-white mb-0 px-3 px-md-5 display-6 display-md-4 display-lg-3 display-xl-2 fw-bold" >
+                we made your <span class="great-text">Great</span> moment..
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header section end -->
+    <!-- start events sections -->
+
+    <!-- start trending event -->
+    <!-- start trending event -->
+
+
+    <section class="trading-event" id="eventsar">
+      <h2>أحدث الفعاليات</h2>
+      <div class="container">
+        <div class="slides">
+          <a target="_blank" href="event.html">
+            <img src="Photos/events/sliders/slide1.jpg">
+            <img src="Photos/events/sliders/slide2.jpg">
+            <img src="Photos/events/sliders/slide3.jpg">
+          </a>
+        </div>
+        <div onclick="side_slidear(-1)" class="slide left">
+          <span class="fas fa-angle-left"> </span>
+        </div>
+        <div onclick="side_slidear(1)" class="slide right">
+          <span class="fas fa-angle-right"> </span>
+        </div>
+
+        <div class="btm-sliders">
+          <span onclick="btm_slidear(1)"> </span>
+          <span onclick="btm_slidear(2)"> </span>
+          <span onclick="btm_slidear(3)"> </span>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- end trending event -->
+
+    <!-- end trending event -->
+
+
+
+    <!-- start catigories section -->
+
+
+    <section class="catigories">
+      <div class="container">
+        <div class="row">
+          <a href="events.html" target="_blank" style="text-decoration: none;">
+            <h2 > جميع الأصناف</h2>
+          </a>
+          <div class="category-item col-lg-3 col-md-6 col-sm-6 col-12"> <img src="Photos/events/catigories/art.jpg"
+              alt="">
+            <p><a target="_blank" href="events.html?type=culture">فن و ثقافة</a></p>
+          </div>
+          <div class="category-item col-lg-3 col-md-6 col-sm-6 col-12"> <img src="Photos/events/catigories/science.jpg"
+              alt="">
+            <p><a target="_blank" href="events.html?type=educational">علمية</a></p>
+          </div>
+          <div class="category-item col-lg-3 col-md-6 col-sm-6 col-12"><img
+              src="Photos/events/catigories/entertainment.jpg" alt="">
+            <p><a target="_blank" href="events.html?type=entertanments">ترفيهية</a></p>
+          </div>
+          <div class="category-item col-lg-3 col-md-6 col-sm-6 col-12"><img src="Photos/events/catigories/sport.jpg"
+              alt="">
+            <p><a target="_blank" href="events.html?type=sport">رياضية </a></p>
+          </div>
+
+
+        </div>
+      </div>
+
+
+
+
+    </section>
+    <!-- end catigories section -->
+    <!-- start latest events section -->
+    <div class="latest-events">
+      <h2>أحدث الفعاليات</h2>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="card  col-lg-4 col-sm-12">
+            <img src="Photos/events/latest events/music lina.jpg" alt="">
+            <div class="intro">
+              <h2>ليالي دمشق</h2>
+              <p>
+                <span>لينا شماميان</span> <br>
+                دار الأوبرا <br> 10 OCT
+                <br> friday 9pm<br> 100$ <br>
+                <a href="event.html?catrgor=entertainment&event=event1"><button>More Detiles</button></a>
+              </p>
+            </div>
+          </div>
+          <div class="card  col-lg-4 col-sm-12">
+            <img src="Photos/events/latest events/music iyad.jpg" alt="">
+            <div class="intro">1
+              <h2>ليالي دمشق</h2>
+              <p>
+                <span>إياد ريماوي</span> <br>
+                دار الأوبرا<br> 12 OCT
+                <br> sunday 9pm<br> 100$ <br>
+                <a href="event.html?catrgor=entertainment&event=event2"><button>More Detiles</button></a>
+              </p>
+            </div>
+          </div>
+          <div class="card col-lg-4 col-sm-12">
+            <img src="Photos/events/latest events/mach.jpg" alt="">
+            <div class="intro">
+              <h2>مباراة كرة سلة</h2>
+              <p>
+                <span>الوحدة x الكرامة</span> <br>
+                ملعب النجمة <br> 7 OCT
+                <br> thursday 17:00 pm <br> 15$ <br>
+                <a href="event.html?catrgor=sport&event=event15"><button>More Detiles</button></a>
+              </p>
+            </div>
+          </div>
+          <div class="card col-lg-4 col-sm-12">
+            <img src="Photos/events/latest events/texpo.jpg" alt="">
+            <div class="intro">
+              <h2>Expo Land</h2>
+              <p>
+                <span>معرض التكنولوجيا</span> <br>
+                دمشق-مدينة المعارض <br> 17 OCT
+                <br> friday 2pm <br> 25$ <br>
+                <a href="event.html?catrgor=education&event=event17"><button>More Detiles</button></a>
+              </p>
+            </div>
+          </div>
+          <div class="card col-lg-4 col-sm-12">
+            <img src="Photos/events/latest events/art.jpg" alt="">
+            <div class="intro">
+              <h2>فن المدينة القديمة</h2>
+              <p>
+                <span>معرض دمشق</span> <br>
+                خان أسعد باشا <br> 14 OCT
+                <br> Monday 13pm <br> 10$ <br>
+                <a href="event.html?catrgor=culture&event=event9"><button>More Detiles</button></a>
+              </p>
+            </div>
+          </div>
+          <div class="card  col-lg-4 col-sm-12">
+            <img src="Photos/events/latest events/marathon.jpg" alt="">
+            <div class="intro">
+              <h2>ماراثون دمشق</h2>
+              <p>
+
+                المدينة الرياضية <br> 26 SEP
+                <br> friday 9am<br> 20$ <br>
+                <a href="event.html?catrgor=sport&event=event16"><button>More Detiles</button></a>
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- end latest events section -->
+
+
+
+
+
+    <!-- end events sections -->
+    <!-- start about us section -->
+    <section class="about-us" id="aboutar">
+
+      <div class="container">
+        <div class="row justify-content-between ">
+          <div class="about-us-info col-lg-6 col-md-6 col-sm-12 ">
+            <h1>نبض دمشق</h1>
+            <p>نبض دمشق مجموعة مكونة من فريق مبدع يهتم بأدق التفاصيل لخلق <span>حدث لا ينسى..</span> <br>
+              <span>NABD DIMASHQ</span> منصة الكترونية تجمع أحدث الفعاليات الثقافية و الفنية و الترفيهية والرياضية و
+              العلمية التي تقام في دمشق. <br>
+              مهمتنا هي تسهيل عملية اكتشاف و الانضمام للفعاليات التي تهمك كل ذلك في مكان واحد منظم وسهل الاستخدام-لنبقيك
+              على صلة بقلب المدينة النابض. <br>
+              <a target="_blank" href="about.html"><button class="contact">تفاصيل أكثر</button></a>
+            </p>
+          </div>
+
+          <div class="about-us-img col-lg-6 col-md-6 col-sm-12 ">
+            <img src="Photos/others/id.jpg" alt="img">
+          </div>
+
+        </div>
+    </section>
+
+    </div>
+
+
+
+
+
+
+    <!-- end about us section -->
+
+
+
+    <!-- moving up button -->
+    <a href="#headerar"> <button class="moving"><i class="fas fa-angle-up"></i></button></a>
+
+
+    <!-- start footer section -->
+    <footer id="callar">
+      <div class="container">
+        <div class="row justify-content-between">
+
+          <div class="container contact-us col-md-3  col-xs-12">
+
+            <div class="row justify-content-between">
+              <a href="contact.html" target="_blank">
+                <h2 class="col-12">اتصل بنا</h2>
+              </a>
+              <a target="_blank" href="" class="col-12"> <i class="fa fa-phone"></i>هاتف: 0991114578</a>
+              <a target="_blank" href="mailto:info@svuonline.org" class="col-12"> <i
+                  class="fa fa-at"></i>E-mail:nabddimashq@gmail.com </a>
+              <a target="_blank" href="https://www.svuonline.org/" class="col-12"> <i class="fa fa-globe"></i>
+                www.nabd-dimashq@info.net</a>
+              <a target="_blank" href="https://www.google.com/maps/place/Damascus,+Syria" class="col-12"> <i
+                  class="fa fa-map-marker "></i> syria-damascus</a>
+
+            </div>
+
+          </div>
+          <div class="container social-media col-md-3 col-xs-12">
+
+
+            <div class="row justify-content-between">
+              <a href="contact.html" target="">
+                <h2 class="col-12 ">تابعنا</h2>
+              </a>
+              <a target="_blank" href="https://www.facebook.com/share/12DibUjfkss/" class="col-12"> <i
+                  class="fa-brands fa-facebook"></i><span> Facebook</span></a>
+              <a target="_blank" href="http://instagram.com/syrian_virtual_university" class="col-12"> <i
+                  class="fa-brands fa-instagram"></i> <span>Instagram</span></a>
+              <a target="_blank" href="https://t.me/svu_news_ch" class="col-12"> <i class="fa-brands fa-whatsapp"></i>
+                <span>Whatsapp</span></a>
+              <a target="_blank" href="https://x.com/SVU_Syria?t=weNSpXwB4dKIfYVGSAOSHQ&s=09" class="col-12"> <i
+                  class="fa-brands fa-twitter"></i> <span>Twitter</span></a>
+            </div>
+
+
+
+
+          </div>
+
+        </div>
+
+        <div class="copy-right">
+          <hr>
+          &copy 2025 نبض دمشق كل الحقوق محفوظة
+        </div>
+      </div>
+
+    </footer>
+    <!-- end footer section -->
+
+
+  </section>
 
 
 
   <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/javascript.js">
-
-
-  </script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/javascript.js"></script>
+ 
+  
 </body>
 
 </html>
-
-
