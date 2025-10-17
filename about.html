@@ -1,5 +1,410 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="css/fontawesome-free-7.0.1-web/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/abou.css">
+    <title>about</title>
+  </head>
+
+  <body>
+  <section class="english">
+     <!-- header section start -->
+    <header class="position-relative" id="header">
+      <div class="container py-3">
+        <div class="row align-items-center">
+          <!-- Logo -->
+          <div class="col-6 col-md-3">
+            <a href="#" class="logo">
+              <img src="Photos/logo/logo1.jpg" alt="logo" class="img-fluid">
+            </a>
+          </div>
+
+          <!-- Desktop Navbar -->
+          <div class="col-6 col-md-9 d-flex justify-content-end">
+            <nav class="desktop-nav d-none d-md-block">
+              <ul class="d-flex list-unstyled mb-0">
+                <li><a href="index.html #home" class="px-3 py-2">Home</a></li>
+                <li><a href="about.html" class="px-3 py-2">About</a></li>
+                <li><a href="events.html" class="px-3 py-2">Events</a></li>
+                <li><a href="contact.html" class="px-3 py-2">Call US</a></li>
+                <li><button onclick="setLanguage('en')"><img src="Photos/english.png" alt="" width="30px"
+                      height="30px"></button> </li>
+                <li><button onclick="setLanguage('ar')"><img src="Photos/ar.jpg" alt="" width="30px"
+                      height="30px"></button></li>
+              </ul>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button class="menu-toggle d-md-none">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Sidebar -->
+      <nav id="home">
+        <ul class="sidebar list-unstyled">
+          <li>
+            <button class="close">
+              <i class="fa fa-close text-white"></i>
+            </button>
+          </li>
+          <li><a href="index.html #home" class="px-3 py-2">Home</a></li>
+          <li><a href="about.html" class="px-3 py-2">About</a></li>
+          <li><a href="events.html " class="px-3 py-2">Events</a></li>
+          <li><a href="contact.html " class="px-3 py-2">Call US</a></li>
+          <li><button onclick="setLanguage('en')" class="po"><img src="Photos/english.png" alt="" width="30px"
+                height="30px"></button> </li>
+          <li><button onclick="setLanguage('ar')" class="po"><img src="Photos/ar.jpg" alt="" width="30px"
+                height="30px"></button></li>
+        </ul>
+      </nav>
+
+      <!--hero section-->
+      <div class="header-text position-absolute top-50 start-0 translate-middle-y w-100">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="text-white mb-0 px-3 px-md-5 display-6 display-md-4 display-lg-3 display-xl-2 fw-bold">
+                we made your <span class="great-text">Great</span> moment..
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header section end -->
+     <h2 class="title">About Us</h2>
+
+  <section class="about">
+    <img class="header-img" src="Photos/others/id.jpg" alt="" >
+
+    <h1>Nabd Dimashq</h1>
+            <p>we have a cteative team that pays attention to the smallest details to creat an <span>unforgettable
+                event..</span> <br>
+              <span>NABD DIMASHQ</span> is an online platform that bring together the latest culture,artistic,sports,and
+              scientific events happenning in Damascus. <br>
+              Our mission is to make it easy for you to discuver and join events you care about,all in one orgnized and <br>
+              user-friendly place _ keeping you connected to the city's vibrant pluse. <br>
+              
+            </p>
+
+    <div class="values">
+      <h3>Our Vision</h3>
+      <p>To be the primary destination for those seeking events across various fields.
+.</p>
+
+      <h3>Our Mission</h3>
+      <p>To provide a comfortable and efficient user experience that combines accuracy with ease of access to information.
+</p>
+
+      <h3>Our Values
+</h3>
+      <p>Transparency– Quality – Innovation – Collaboration.</p>
+    </div>
+
+    <div class="team">
+      <h3>our team</h3>
+      <div class="members">
+        <div class="member">
+          <img src="Photos/others/member.png" alt="">
+          <h4>Maha Alghadban</h4>
+          <p>Frontend developer</p>
+        </div>
+        <div class="member">
+          <img src="Photos/others/member.png" alt="">
+          <h4>Maha Alghadban</h4>
+          <p>Backend developer</p>
+        </div>
+        <div class="member">
+          <img src="Photos/others/member.png" alt="">
+          <h4>Maha Alghadban</h4>
+          <p>Backend developer</p>
+        </div>
+         <div class="member">
+          <img src="Photos/others/member.png" alt="">
+          <h4>Maha Alghadban</h4>
+          <p>Fronend developer</p>
+        </div>
+         <div class="member">
+          <img src="Photos/others/member.png" alt="">
+          <h4>Maha Alghadban</h4>
+          <p>Frontend developer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- moving up button -->
+    <a href="#header"> <button class="moving"><i class="fas fa-angle-up"></i></button></a>
+
+     <!-- start footer section -->
+    <footer id="call">
+      <div class="container">
+        <div class="row justify-content-between">
+
+          <div class="container contact-us col-md-3  col-xs-12">
+
+            <div class="row justify-content-between">
+              <a href="contact.html" target="_blank">
+                <h2 class="col-12">Contact us</h2>
+              </a>
+              <a target="_blank" href="" class="col-12"> <i class="fa fa-phone"></i>phone: 0991114578</a>
+              <a target="_blank" href="mailto:info@svuonline.org" class="col-12"> <i
+                  class="fa fa-at"></i>E-mail:nabddimashq@gmail.com </a>
+              <a target="_blank" href="https://www.svuonline.org/" class="col-12"> <i class="fa fa-globe"></i>
+                www.nabd-dimashq@info.net</a>
+              <a target="_blank" href="https://www.google.com/maps/place/Damascus,+Syria" class="col-12"> <i
+                  class="fa fa-map-marker "></i> syria-damascus</a>
+
+            </div>
+
+          </div>
+          <div class="container social-media col-md-3 col-xs-12">
+
+
+            <div class="row justify-content-between">
+              <a href="contact.html" target="">
+                <h2 class="col-12 ">Follow us</h2>
+              </a>
+              <a target="_blank" href="https://www.facebook.com/share/12DibUjfkss/" class="col-12"> <i
+                  class="fa-brands fa-facebook"></i><span> Facebook</span></a>
+              <a target="_blank" href="http://instagram.com/syrian_virtual_university" class="col-12"> <i
+                  class="fa-brands fa-instagram"></i> <span>Instagram</span></a>
+              <a target="_blank" href="https://t.me/svu_news_ch" class="col-12"> <i class="fa-brands fa-whatsapp"></i>
+                <span>Whatsapp</span></a>
+              <a target="_blank" href="https://x.com/SVU_Syria?t=weNSpXwB4dKIfYVGSAOSHQ&s=09" class="col-12"> <i
+                  class="fa-brands fa-twitter"></i> <span>Twitter</span></a>
+            </div>
+
+
+
+
+          </div>
+
+        </div>
+
+        <div class="copy-right">
+          <hr>
+          &copy 2025 NABD DIMASHQ .All rights reserved
+        </div>
+      </div>
+
+    </footer>
+    <!-- end footer section -->
+  </section>
+  <section class="arabic">
+
+     <!-- header section start -->
+    <header class="position-relative" id="headerar">
+      <div class="container py-3">
+        <div class="row align-items-center">
+          <!-- Logo -->
+          <div class="col-6 col-md-3">
+            <a href="#" class="logo">
+              <img src="Photos/logo/logo1.jpg" alt="logo" class="img-fluid">
+            </a>
+          </div>
+
+          <!-- Desktop Navbar -->
+          <div class="col-6 col-md-9 d-flex justify-content-end">
+            <nav class="desktop-nav d-none d-md-block">
+              <ul class="d-flex list-unstyled mb-0">
+                <li><a href="index.html #headerar" class="px-3 py-2">الرئيسية</a></li>
+                <li><a href="index.html #aboutar" class="px-3 py-2">عن الدليل</a></li>
+                <li><a href="events.html #eventsar" class="px-3 py-2">الفعاليات</a></li>
+                <li><a href="contact.html#callar" class="px-3 py-2">اتصل بنا</a></li>
+                <li><button onclick="setLanguage('en')"><img src="Photos/english.png" alt="" width="30px"
+                      height="30px"></button> </li>
+                <li><button onclick="setLanguage('ar')"><img src="Photos/ar.jpg" alt="" width="30px"
+                      height="30px"></button></li>
+              </ul>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button class="menu-toggle d-md-none">
+              <i class="fa-solid fa-bars"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Sidebar -->
+      <nav id="home">
+        <ul class="sidebar list-unstyled">
+          <li>
+            <button class="close">
+              <i class="fa fa-close text-white"></i>
+            </button>
+          </li>
+          <li><a href="index.html #headerar" class="px-3 py-2">الرئيسية</a></li>
+          <li><a href="index.html #aboutar" class="px-3 py-2">عن الدليل</a></li>
+          <li><a href="events.html #eventsar" class="px-3 py-2">الفعاليات</a></li>
+          <li><a href="contact.html #callar" class="px-3 py-2">اتصل بنا</a></li>
+          <li><button onclick="setLanguage('en')" class="po"><img src="Photos/english.png" alt="" width="30px"
+                height="30px"></button> </li>
+          <li><button onclick="setLanguage('ar')" class="po"><img src="Photos/ar.jpg" alt="" width="30px"
+                height="30px"></button></li>
+        </ul>
+      </nav>
+
+      <!--hero section-->
+      <div class="header-text position-absolute top-50 start-0 translate-middle-y w-100">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <h1 class="heroar text-white mb-0 px-3 px-md-5 display-6 display-md-4 display-lg-3 display-xl-2 fw-bold" >
+                we made your <span class="great-text">Great</span> moment..
+              </h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header section end -->
+
+
+
+
+     <h2 class="title">من نحن</h2>
+
+  <section class="about">
+    <img class="header-img" src="Photos/others/id.jpg" alt="صورة عن الموقع" >
+
+     <p><h1>نبض دمشق </h1>
+      مجموعة مكونة من فريق مبدع يهتم بأدق التفاصيل لخلق <span>حدث لا ينسى..</span> <br>
+              <span>NABD DIMASHQ</span> منصة الكترونية تجمع أحدث الفعاليات الثقافية و الفنية و الترفيهية والرياضية و
+              العلمية التي تقام في دمشق. <br>
+              مهمتنا هي تسهيل عملية اكتشاف و الانضمام للفعاليات التي تهمك كل ذلك في مكان واحد منظم وسهل الاستخدام-لنبقيك
+              على صلة بقلب المدينة النابض. <br>
+             
+            </p>
+
+    <div class="values">
+      <h3>رؤيتنا</h3>
+      <p>أن نكون الوجهة الأولى للباحثين عن الفعاليات في مختلف المجالات.</p>
+
+      <h3>رسالتنا</h3>
+      <p>تقديم تجربة استخدام مريحة وفعالة، تجمع بين الدقة وسهولة الوصول للمعلومة.</p>
+
+      <h3>قيمنا</h3>
+      <p>الشفافية – الجودة – الإبداع – التعاون.</p>
+    </div>
+
+    <div class="team">
+      <h3>فريقنا</h3>
+      <div class="members">
+        <div class="member">
+          <img src="Photos/others/member.png" alt="عضو الفريق">
+          <h4>مها سليمان</h4>
+          <p>تطوير واجهات المستخدم</p>
+        </div>
+        <div class="member">
+          <img src="Photos/others/member.png" alt="عضو الفريق">
+          <h4>ليان محمد</h4>
+          <p>تصميم قاعدة البيانات</p>
+        </div>
+        <div class="member">
+          <img src="Photos/others/member.png" alt="عضو الفريق">
+          <h4>نور أحمد</h4>
+          <p>البرمجة الخلفية</p>
+        </div>
+         <div class="member">
+          <img src="Photos/others/member.png" alt="عضو الفريق">
+          <h4>مها سليمان</h4>
+          <p>تطوير واجهات المستخدم</p>
+        </div>
+         <div class="member">
+          <img src="Photos/others/member.png" alt="عضو الفريق">
+          <h4>مها سليمان</h4>
+          <p>تطوير واجهات المستخدم</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+     <!-- moving up button -->
+    <a href="#headerar"> <button class="moving"><i class="fas fa-angle-up"></i></button></a>
+
+
+    <!-- start footer section -->
+    <footer id="callar">
+      <div class="container">
+        <div class="row justify-content-between">
+
+          <div class="container contact-us col-md-3  col-xs-12">
+
+            <div class="row justify-content-between">
+              <a href="contact.html" target="_blank">
+                <h2 class="col-12">اتصل بنا</h2>
+              </a>
+              <a target="_blank" href="" class="col-12"> <i class="fa fa-phone"></i>هاتف: 0991114578</a>
+              <a target="_blank" href="mailto:info@svuonline.org" class="col-12"> <i
+                  class="fa fa-at"></i>E-mail:nabddimashq@gmail.com </a>
+              <a target="_blank" href="https://www.svuonline.org/" class="col-12"> <i class="fa fa-globe"></i>
+                www.nabd-dimashq@info.net</a>
+              <a target="_blank" href="https://www.google.com/maps/place/Damascus,+Syria" class="col-12"> <i
+                  class="fa fa-map-marker "></i> syria-damascus</a>
+
+            </div>
+
+          </div>
+          <div class="container social-media col-md-3 col-xs-12">
+
+
+            <div class="row justify-content-between">
+              <a href="contact.html" target="">
+                <h2 class="col-12 ">تابعنا</h2>
+              </a>
+              <a target="_blank" href="https://www.facebook.com/share/12DibUjfkss/" class="col-12"> <i
+                  class="fa-brands fa-facebook"></i><span> فيسبوك</span></a>
+              <a target="_blank" href="http://instagram.com/syrian_virtual_university" class="col-12"> <i
+                  class="fa-brands fa-instagram"></i> <span>انستاغرام</span></a>
+              <a target="_blank" href="https://t.me/svu_news_ch" class="col-12"> <i class="fa-brands fa-whatsapp"></i>
+                <span>واتساب</span></a>
+              <a target="_blank" href="https://x.com/SVU_Syria?t=weNSpXwB4dKIfYVGSAOSHQ&s=09" class="col-12"> <i
+                  class="fa-brands fa-twitter"></i> <span>تويتر</span></a>
+            </div>
+
+
+
+
+          </div>
+
+        </div>
+
+        <div class="copy-right">
+          <hr>
+          &copy 2025 نبض دمشق كل الحقوق محفوظة
+        </div>
+      </div>
+
+    </footer>
+    <!-- end footer section -->
+  </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/javascript.js"></script>
+  </body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
@@ -135,6 +540,7 @@
 </body>
 
 </html>
+
 
 
 
