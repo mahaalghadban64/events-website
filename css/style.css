@@ -434,13 +434,14 @@ background-color: rgba(255, 255, 255, 0.2);
     }
     .latest-events .container .card .intro p{
         padding:6px;
-        font-size:11px;
+        font-size:auto;
     }
     .latest-events .container .card .intro h2{
-        font-size:18px;
+        font-size: auto;
+        padding:4px
     }
 }
-@media(max-width:480px){
+@media(max-width:576px){
     . latest-events .container .card{
         width:92%
             justify-content:center;
@@ -787,6 +788,7 @@ header .container .desktop-nav ul li button img{
   direction: ltr;
   text-align: left;
 }
+
 
 
 
