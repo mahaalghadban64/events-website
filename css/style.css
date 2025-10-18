@@ -430,12 +430,14 @@ background-color: rgba(255, 255, 255, 0.2);
     .latest-events .container{
         
     overflow-x: hidden;
-        
-        
-       
+
     }
-    .latest-events .container .card .intro{
-        padding:6px;
+    .latest-events .container .card .intro p{
+        padding:4px;
+        font-size:15px;
+    }
+    .latest-events .container .card .intro h2{
+        font-size:25px;
     }
 }
 @media(max-width:480px){
@@ -458,9 +460,12 @@ background-color: rgba(255, 255, 255, 0.2);
         
        
     }
-    .latest-events .container .card .intro{
-        padding:6px;
+    .latest-events .container .card .intro p{
+        padding:4px;
+        font-size:15px;
     }
+    .latest-events .container .card .intro h2{
+        font-size:25px;
 }
     
 
@@ -781,6 +786,7 @@ header .container .desktop-nav ul li button img{
   direction: ltr;
   text-align: left;
 }
+
 
 
 
