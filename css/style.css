@@ -415,7 +415,7 @@ background-color: rgba(255, 255, 255, 0.2);
 }
 @media(max-width:768px){
     .latest-events .container .card{
-        width:100%;
+        width:80%;
     }
     .latest-events .container .card img {
         width:100%;
@@ -424,7 +424,8 @@ background-color: rgba(255, 255, 255, 0.2);
     .latest-events .container{
         margin: auto;
         justify-content: space-around;
-        item-align:center;
+       align-items: center;
+       overflow-x: hidden;
     }
 }
 .latest-events .container .card .intro{
@@ -504,18 +505,21 @@ background-color: rgba(255, 255, 255, 0.2);
     margin:100px 0 ;
 
 }
-@media(width:768px){
+@media(max-width:768px){
   .about-us .container .about-us-img img{
-    width:200px;
+    width:100%;
+   justify-content:center;
+   align-items: center;
+   
+
+   
+  }
+  .about-us .container{
+    overflow-x: hidden;
   }
 
 }
-@media(width:480px){
-  .about-us .container .about-us-img img{
-    width:200px;
 
-  }
-}
 
 /* about us h1 style */
 .about-us .container .about-us-info h1 {
@@ -569,6 +573,11 @@ footer{
 }
 footer .container{
     margin: auto;
+}
+@media(max-width:768px){
+  footer .container{
+    overflow-x: hidden;
+  }
 }
 footer .container .contact-us a ,footer .container .social-media a{
     text-decoration: none;
@@ -736,7 +745,6 @@ header .container .desktop-nav ul li button img{
   direction: ltr;
   text-align: left;
 }
-
 
 
 
