@@ -92,7 +92,7 @@ header .container {
     }
     .container .card .intro h2{
         font-size:auto;
-        padding:5px;
+        padding:10px;
     }
 }
 @media(max-width:480px){
@@ -119,7 +119,7 @@ header .container {
     }
     .container .card .intro h2{
         font-size:auto;
-        padding:5px;
+        padding:10px;
     }
 }
     
@@ -187,6 +187,7 @@ transition: 0.5s;
 .moving .fa-angle-up{
   color:white;
 }
+
 
 
 
