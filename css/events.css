@@ -85,9 +85,14 @@ header .container {
     .container{
         
     overflow-x: hidden;
-        
-        
-       
+    }
+    .container .card .intro p{
+        font-size:auto;
+        padding:15px;
+    }
+    .container .card .intro h2{
+        font-size:auto;
+        padding:5px;
     }
 }
 @media(max-width:480px){
@@ -107,9 +112,14 @@ header .container {
     .container{
         
     overflow-x: hidden;
-        
-        
-       
+    }
+    .container .card .intro p{
+        font-size:auto;
+        padding:15px;
+    }
+    .container .card .intro h2{
+        font-size:auto;
+        padding:5px;
     }
 }
     
@@ -177,5 +187,6 @@ transition: 0.5s;
 .moving .fa-angle-up{
   color:white;
 }
+
 
 
