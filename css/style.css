@@ -421,6 +421,11 @@ background-color: rgba(255, 255, 255, 0.2);
         width:100%;
 
     }
+    .latest-events .container{
+        margin: auto;
+        justify-content: space-around;
+        item-align:center;
+    }
 }
 .latest-events .container .card .intro{
   height: 70px;
@@ -731,6 +736,7 @@ header .container .desktop-nav ul li button img{
   direction: ltr;
   text-align: left;
 }
+
 
 
 
