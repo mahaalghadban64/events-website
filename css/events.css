@@ -72,22 +72,44 @@ header .container {
     .container .card{
         width:92%;
         justify-content: center;
+       align-items: center;
         margin: auto;
-        align-item:center;
+        margin-top:5px;
+        margin-bottom:5px;
+        
     }
-    .container.card img{
+    .container .card img {
         width:100%;
+
+    }
+    .container{
+        
+    overflow-x: hidden;
+        
+        
+       
     }
 }
 @media(max-width:480px){
     .container .card{
         width:92%;
         justify-content: center;
+       align-items: center;
         margin: auto;
-        align-item:center;
+        margin-top:5px;
+        margin-bottom:5px;
+        
     }
-    .container.card img{
+    .container .card img {
         width:100%;
+
+    }
+    .container{
+        
+    overflow-x: hidden;
+        
+        
+       
     }
 }
     
@@ -155,4 +177,5 @@ transition: 0.5s;
 .moving .fa-angle-up{
   color:white;
 }
+
 
