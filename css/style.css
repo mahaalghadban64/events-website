@@ -413,6 +413,15 @@ background-color: rgba(255, 255, 255, 0.2);
   overflow: hidden;
   position: relative;
 }
+@media(max-width:768px){
+    .latest-events .container .card{
+        width:100%;
+    }
+    .latest-events .container .card img {
+        width:100%;
+
+    }
+}
 .latest-events .container .card .intro{
   height: 70px;
   width:350px;
@@ -722,6 +731,7 @@ header .container .desktop-nav ul li button img{
   direction: ltr;
   text-align: left;
 }
+
 
 
 
