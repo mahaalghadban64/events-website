@@ -377,7 +377,7 @@ background-color: rgba(255, 255, 255, 0.2);
 .trading-event{
    
     justify-content: center;
-    height: 100vh;
+    /* height: 100vh; */
     align-items: center;
     background:whitesmoke;
 }
@@ -388,7 +388,7 @@ background-color: rgba(255, 255, 255, 0.2);
 }
 .latest-events .container .card img{
   height: 500px;
-  width:350px;
+   width:350px;
   border-radius: 3px;
   transition: 0.5s;
 }
@@ -396,9 +396,19 @@ background-color: rgba(255, 255, 255, 0.2);
   display: flex;
   
 }
+.latest-events .row{
+ margin: 0;
+}
+
+
 .latest-events .container .card {
   height: 500px;
   margin: 50px;
+
+  margin-bottom: 20px;
+  width:350px;
+  max-width: 100%;
+
   box-shadow: 5px 5px 20px black;
   overflow: hidden;
   position: relative;
