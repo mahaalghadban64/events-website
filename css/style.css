@@ -438,7 +438,7 @@ background-color: rgba(255, 255, 255, 0.2);
     }
     .latest-events .container .card .intro h2{
         font-size: auto;
-        padding:10px
+        padding:5px
     }
 }
 @media(max-width:480px){
@@ -467,7 +467,7 @@ background-color: rgba(255, 255, 255, 0.2);
     }
     .latest-events .container .card .intro h2{
         font-size:auto;
-        padding:10px;
+        padding:5px;
 }
 }
     
@@ -789,6 +789,7 @@ header .container .desktop-nav ul li button img{
   direction: ltr;
   text-align: left;
 }
+
 
 
 
