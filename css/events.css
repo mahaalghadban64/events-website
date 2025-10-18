@@ -67,6 +67,30 @@ header .container {
   overflow: hidden;
     position: relative;
 }
+@media(max-width:768px)
+{
+    .container .card{
+        width:92%;
+        justify-content: center;
+        margin: auto;
+        align-item:center;
+    }
+    .container.card img{
+        width:100%;
+    }
+}
+@media(max-width:480px){
+    .container .card{
+        width:92%;
+        justify-content: center;
+        margin: auto;
+        align-item:center;
+    }
+    .container.card img{
+        width:100%;
+    }
+}
+    
 .container .card .intro{
   height: 70px;
   width:350px;
@@ -131,3 +155,4 @@ transition: 0.5s;
 .moving .fa-angle-up{
   color:white;
 }
+
