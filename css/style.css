@@ -442,10 +442,10 @@ background-color: rgba(255, 255, 255, 0.2);
     }
 }
 @media(max-width:480px){
-    . latest-events .container .card{
-        width:92%
+    .latest-events .container .card{
+        width:92%;
             justify-content:center;
-        align-item: center;
+        align-items: center;
         margin:auto;
         margin-top:5px;
         margin-bottom:5px;
@@ -789,7 +789,6 @@ header .container .desktop-nav ul li button img{
   direction: ltr;
   text-align: left;
 }
-
 
 
 
