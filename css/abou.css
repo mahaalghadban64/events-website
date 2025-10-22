@@ -236,8 +236,9 @@ body[dir="ltr"]{
  .dark-mode div.member{
   background-color: #3c3c3e;
  }
-.dark-mode section.about p{
+.dark-mode section.arabic section.about {
     color:white;
 }
+
 
 
