@@ -225,3 +225,34 @@ function setLanguage(lang) {
     form.reset();
   });
 });
+// share and plus to calendar
+ document.querySelectorAll(".event_detailes > div").forEach(section => {
+
+  const shareBtn = section.querySelector(".share");
+  const calendarBtn = section.querySelector(".calendar");
+//  const CloseBtn = section.querySelector(".Close");
+//   const Form = section.querySelector(".bookingForm");
+  shareBtn.addEventListener('click', function() {
+            alert('A widow will open to share on Facebook');
+            // في التطبيق الحقيقي:
+            const url = encodeURIComponent(window.location.href);
+            const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+            window.open(shareUrl, '_blank', 'width=600,height=400');
+
+       
+        });
+        calendarBtn.addEventListener('click', function() {
+    const event = {
+        title: 'عنوان الحدث',
+        start: '2023-12-25T10:00:00',
+        end: '2023-12-25T12:00:00',
+        details: 'تفاصيل الحدث',
+        location: 'موقع الحدث'
+    };
+    
+    const googleUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(event.title)}&dates=${event.start.replace(/-|:|\.\d+/g, '')}/${event.end.replace(/-|:|\.\d+/g, '')}&details=${encodeURIComponent(event.details)}&location=${encodeURIComponent(event.location)}`;
+    window.open(googleUrl, '_blank');
+});
+
+  
+  });
