@@ -98,4 +98,90 @@ body{
         padding: 20px;
       }
     }
-   
+       /* dark mode*/
+[data-theme="dark"] {
+
+  --text-color: #ffffff;
+  --card-bg:#1c1c1c ;
+}
+.sidebar .form-ckeck{
+  margin: 20px;
+}
+
+ .form-check-input{
+  background-color: rgb(244, 244, 244);
+  background-position: left center;
+  background-repeat: no-repeat;
+  transition: background-color 0.3s;
+ }
+ .form-check-input:checked{
+  background-color: var(--main-color);
+  border-color: black;
+  color: black;
+ }
+  .arabic.form-check-input:checked{
+  background-color: var(--main-color);
+  border-color: black;
+  color:black;
+ }
+ html[dir="rtl"].form-check-input{
+  background-position: right center;
+
+ }
+  html[dir="ltr"].form-check-input{
+  background-position: left center;
+ }
+
+
+.dark-mode body{
+  background-color: #1c1c1c;
+  color: white;
+  transition: all 0.3s ease;
+
+}
+
+.dark-mode .card,.dark-mode .container {
+  background-color: #1c1c1c;
+}
+
+
+.dark-mode .space{
+ 
+   width:100%;
+    height:2px;
+     background-color: #28282a;
+}
+.dark-mode div, .dark-mode .student,.dark-mode .trading-event , .dark-mode .catigories,.dark-mode .about-us,.dark-mode footer{
+  background-color:#1c1c1c;
+
+}
+.dark-mode #header .container ,.dark-mode #header .container nav,.dark-mode #header div,.dark-mode .sidebar{
+  background-color: rgb(23, 0, 30);
+
+}
+.dark-mode footer,.dark-mode footer .container a {
+  color: white;
+}
+
+.dark-mode header,.dark-mode footer{
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.dark-mode p,.dark-mode .massegeForm label{
+  color: white;
+  /* color: black; */
+}
+ .dark-mode section.about,.dark-mode section.english,.dark-mode section.arabic{
+  background-color: #1c1c1c;
+ }
+.dark-mode .Call-Us{
+  color: white;
+}
+ .dark-mode .contact-info,.dark-mode .massegeForm{
+  background-color: #500d74;
+ }
+ .dark-mode section.contact-section{
+  background-color: #28282a;
+  border-radius: 25px;
+ }
