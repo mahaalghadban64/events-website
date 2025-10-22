@@ -58,7 +58,7 @@ const cards = slide.querySelectorAll('.card');
 const prevBtn = document.querySelector('.btn.prev');
 const nextBtn = document.querySelector('.btn.next');
 
-// لحساب المسافة التي ينزلق بها السلايدر كل مرة
+
 function getScrollAmount() {
   const card = cards[0];
   const style = getComputedStyle(card);
@@ -66,17 +66,17 @@ function getScrollAmount() {
   return card.offsetWidth + gap;
 }
 
-// التحقق هل السلايدر فعلاً قابل للتمرير
+
 function isScrollable() {
   return slide.scrollWidth > slide.clientWidth;
 }
 
-// التحكم بالأزرار (إظهار دائم بس مع سلوك ذكي)
+
 nextBtn.addEventListener('click', () => {
-  if (!isScrollable()) return; // لا يعمل شيء لو ما في تمرير
+  if (!isScrollable()) return; 
   const maxScrollLeft = slide.scrollWidth - slide.clientWidth;
   if (slide.scrollLeft >= maxScrollLeft - 1) {
-    slide.scrollLeft = 0; // ارجع للبداية (دائري)
+    slide.scrollLeft = 0; 
   } else {
     slide.scrollLeft += getScrollAmount();
   }
@@ -85,7 +85,7 @@ nextBtn.addEventListener('click', () => {
 prevBtn.addEventListener('click', () => {
   if (!isScrollable()) return;
   if (slide.scrollLeft <= 0) {
-    slide.scrollLeft = slide.scrollWidth; // ارجع للنهاية (دائري)
+    slide.scrollLeft = slide.scrollWidth; 
   } else {
     slide.scrollLeft -= getScrollAmount();
   }
@@ -107,7 +107,6 @@ document.addEventListener("DOMContentLoaded", () => {
   englishRoot.style.display = (lang === "en") ? "block" : "none";
   arabicRoot.style.display = (lang === "ar") ? "block" : "none";
 
-  // نحدد الجذر النشط حسب اللغة
   const activeRoot = (lang === "ar") ? arabicRoot : englishRoot;
   if (!activeRoot) return;
 
@@ -120,31 +119,29 @@ document.addEventListener("DOMContentLoaded", () => {
   if (!activeCategory) return;
   activeCategory.style.display = "block";
 
-  // نخفي جميع الفعاليات داخل القسم
+  
   const allEvents = activeCategory.querySelectorAll(".event_detailes > div");
   allEvents.forEach(div => div.style.display = "none");
 
-  // نعرض الفعالية المطلوبة فقط
+  
   const currentEvent = activeCategory.querySelector(`.event_detailes .${eventName}`);
   if (currentEvent) {
     currentEvent.style.display = "block";
   }
 
-  // نعرض قسم فعاليات ذات صلة
+ 
   const related = activeCategory.querySelector(".related, .slider-container");
   if (related) related.style.display = "block";
 });
 
 function setLanguage(lang) {
-  // نحفظ اللغة الجديدة في body
+  
   document.body.setAttribute("lang", lang);
   document.body.setAttribute("dir", lang === "ar" ? "rtl" : "ltr");
 
-  // إظهار القسم الصحيح فقط
   document.querySelector(".english").style.display = (lang === "en") ? "block" : "none";
   document.querySelector(".arabic").style.display = (lang === "ar") ? "block" : "none";
 
-  // إعادة تحميل تفاصيل الفعالية المناسبة بدون refresh
   const params = new URLSearchParams(window.location.search);
   const category = params.get("category") || params.get("catrgor");
   const eventName = params.get("event");
@@ -155,24 +152,20 @@ function setLanguage(lang) {
 
   if (!activeRoot) return;
 
-  // نخفي كل الأقسام الفرعية
   activeRoot.querySelectorAll("section.entertainment, section.sport, section.culture, section.education")
     .forEach(sec => sec.style.display = "none");
 
-  // نعرض القسم المطلوب فقط
   const activeCategory = activeRoot.querySelector(`section.${category}`);
   if (!activeCategory) return;
   activeCategory.style.display = "block";
 
-  // نخفي جميع الفعاليات ضمن التفاصيل
   const allEvents = activeCategory.querySelectorAll(".event_detailes > div");
   allEvents.forEach(div => div.style.display = "none");
 
-  // نعرض الفعالية المطلوبة فقط
   const currentEvent = activeCategory.querySelector(`.event_detailes .${eventName}`);
   if (currentEvent) currentEvent.style.display = "block";
 
-  // نعرض قسم فعاليات ذات صلة
+  
   const related = activeCategory.querySelector(".related, .slider-container");
   if (related) related.style.display = "block";
 }
@@ -225,16 +218,16 @@ function setLanguage(lang) {
     form.reset();
   });
 });
+// =================================================
 // share and plus to calendar
  document.querySelectorAll(".event_detailes > div").forEach(section => {
 
   const shareBtn = section.querySelector(".share");
   const calendarBtn = section.querySelector(".calendar");
-//  const CloseBtn = section.querySelector(".Close");
-//   const Form = section.querySelector(".bookingForm");
+
   shareBtn.addEventListener('click', function() {
             alert('A widow will open to share on Facebook');
-            // في التطبيق الحقيقي:
+            
             const url = encodeURIComponent(window.location.href);
             const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
             window.open(shareUrl, '_blank', 'width=600,height=400');
@@ -256,3 +249,22 @@ function setLanguage(lang) {
 
   
   });
+// dark mode
+
+  const toggles = document.querySelectorAll('.theme-toggle');
+
+  toggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+
+    });
+  });
+
+toggle.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+  if (document.body.classList.contains('dark-mode')) {
+    localStorage.theme = 'dark';
+  } else {
+    localStorage.theme = 'light';
+  }
+});
