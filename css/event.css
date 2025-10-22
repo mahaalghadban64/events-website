@@ -325,7 +325,9 @@ transition: 0.5s;
         margin: 0 8px;
     }
 }
-
+.event_detailes .share,.event_detailes .calendar{
+  background-color: white;
+}
 
 
 
