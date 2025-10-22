@@ -160,11 +160,31 @@ function setLanguage(lang){
   document.body.setAttribute('dir', 'ltr');
   }
 }
+// --------------------------------------------------------
+// dark mode
+
+  const toggles = document.querySelectorAll('.theme-toggle');
+
+  toggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+
+    });
+  });
+
+toggle.addEventListener('click', () => {
+  document.body.classList.toggle('dark-mode');
+  if (document.body.classList.contains('dark-mode')) {
+    localStorage.theme = 'dark';
+  } else {
+    localStorage.theme = 'light';
+  }
+});
+
 
 
 
  
-
 
 
 
