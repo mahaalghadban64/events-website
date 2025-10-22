@@ -40,6 +40,9 @@ header .container {
 
  
 }
+.great-text{
+  color: #500d74 !important;
+}
 .container .event_detailes h2 , .container .event_detailes h3 , .container .event_detailes span{
   color: #500d74;
 }
@@ -329,6 +332,110 @@ transition: 0.5s;
   background-color: white;
 }
 
+
+/* dark mode*/
+[data-theme="dark"] {
+
+  --text-color: #ffffff;
+  --card-bg:#1c1c1c ;
+}
+.sidebar .form-ckeck{
+  margin: 20px;
+}
+
+ .form-check-input{
+  background-color: rgb(244, 244, 244);
+  background-position: left center;
+  background-repeat: no-repeat;
+  transition: background-color 0.3s;
+ }
+ .form-check-input:checked{
+  background-color: var(--main-color);
+  border-color: black;
+  color: black;
+ }
+  .arabic.form-check-input:checked{
+  background-color: var(--main-color);
+  border-color: black;
+  color:black;
+ }
+ html[dir="rtl"].form-check-input{
+  background-position: right center;
+
+ }
+  html[dir="ltr"].form-check-input{
+  background-position: left center;
+ }
+
+
+
+.dark-mode body{
+  background-color:#222121;
+  color: white;
+  transition: all 0.3s ease;
+  
+
+}
+
+.dark-mode .container {
+  background-color: #222121;
+   
+}
+
+
+
+.dark-mode #header .container ,.dark-mode #header .container nav,.dark-mode #header div,.dark-mode .sidebar{
+  background-color: #222121;
+
+}
+.dark-mode .about-us,.dark-mode footer,.dark-mode footer .container a {
+  color: white;
+}
+.dark-mode .category-item p a:hover{
+  color: #500d74;
+}
+
+
+.dark-mode section.entertanments ,.dark-mode section .culture,.dark-mode section .sport,.dark-mode section .educational,.dark-mode section .english,.dark-mode section .catigories{
+background-color: #222121;
+
+}
+
+
+
+.dark-mode .space{
+  height: 5px;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  background-color:#2c2c3a;
+}
+
+.dark-mode section.english,.dark-mode section.arabic{
+  background-color: #222121;
+  
+  margin: 0px;
+}
+.dark-mode .sidebar li a{
+  color: white;
+}
+.dark-mode p,.dark-mode h2, .dark-mode h3, .dark-mode span,.dark-mode div{
+  color: white;
+}
+.dark-mode header ul li a{
+  color: white;
+}
+.dark-mode section.entertainment ,.dark-mode section .culture,.dark-mode section .sport,.dark-mode section .educational,.dark-mode section .english,.dark-mode section .catigories{
+background-color: #222121;
+
+}
+.dark-mode section.entertainment{
+  background-color: #222121;
+}
+.dark-mode div{
+  background-color: #222121;
+}
+  
 
 
 
